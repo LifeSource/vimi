@@ -1,0 +1,60 @@
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = git@github.com:vim-syntastic/syntastic.git
+[submodule "bundle/emmet"]
+	path = bundle/emmet
+	url = git@github.com:mattn/emmet-vim.git
+[submodule "bundle/airline"]
+	path = bundle/airline
+	url = git@github.com:vim-airline/vim-airline.git
+[submodule "bundle/typescript"]
+	path = bundle/typescript
+	url = git@github.com:leafgarland/typescript-vim.git
+[submodule "bundle/coolor"]
+	path = bundle/coolor
+	url = git@github.com:KabbAmine/vCoolor.vim.git
+[submodule "bundle/pug"]
+	path = bundle/pug
+	url = git@github.com:digitaltoad/vim-pug.git
+[submodule "bundle/javascript"]
+	path = bundle/javascript
+	url = git@github.com:pangloss/vim-javascript.git
+[submodule "bundle/tern"]
+	path = bundle/tern
+	url = git@github.com:ternjs/tern_for_vim.git
+[submodule "bundle/surround"]
+	path = bundle/surround
+	url = git@github.com:tpope/vim-surround.git
+[submodule "bundle/node"]
+	path = bundle/node
+	url = git@github.com:moll/vim-node.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = git@github.com:ctrlpvim/ctrlp.vim.git
+[submodule "bundle/snippets"]
+	path = bundle/snippets
+	url = git@github.com:honza/vim-snippets.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = git@github.com:garbas/vim-snipmate.git
+[submodule "bundle/tlib"]
+	path = bundle/tlib
+	url = https://github.com/tomtom/tlib_vim.git
+[submodule "bundle/mwutils"]
+	path = bundle/mwutils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = git@github.com:Valloric/YouCompleteMe.git
+[submodule "bundle/autoformat"]
+	path = bundle/autoformat
+	url = https://github.com/Chiel92/vim-autoformat.git
+[submodule "bundle/tsuquyomi"]
+	path = bundle/tsuquyomi
+	url = https://github.com/Quramy/tsuquyomi.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git

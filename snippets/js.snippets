@@ -1,0 +1,118 @@
+# ---------------------------------------------
+# JavaScript ES5
+# ---------------------------------------------
+snippet clg
+	console.log(${1:});${0}
+# ---------------------------------------------
+# Object, Constants and Variable  Creation
+# ---------------------------------------------
+snippet vv
+	var ${1} = ${2};
+
+snippet vr
+	var ${1} = [${2}];
+
+snippet vb
+	var ${1} = {
+		${0}
+	};
+
+snippet vlet
+	let ${1} = ${0};
+
+snippet vconst
+	const ${1} = ${0};
+
+# ---------------------------------------------
+# Conditional
+# ---------------------------------------------
+snippet ief
+	if (${1}) {
+		${2}
+	} else if (${3}) {
+		${4}
+	} else {
+		${0}
+	}
+
+# ---------------------------------------------
+# Functions, IIFE
+# ---------------------------------------------
+snippet f)
+	function (${1}) {
+		${0}
+	});
+snippet	f;
+	function (${1}) {
+		${0}
+	};
+snippet	f,
+	function (${1}) {
+		${0}
+	},
+snippet pfn
+	${1} : function ${2}(${3}) {
+		${0}
+	}
+snippet iife
+	(function (${2}) {
+		"use strict";
+		${0}
+	})(${1});
+# ---------------------------------------------
+# JavaScript ES6
+# ---------------------------------------------
+
+# ES6 function
+snippet efn
+	${1}(${2}) {
+		${0}
+	}
+snippet 6f
+	${1}(${2}) {
+		${0}
+	}
+# Constructor
+snippet ctr
+	constructor() {
+		${0}
+	}
+snippet ctor
+	constructor() {
+		${0}
+	}
+# Class
+snippet cls
+	class ${1} {
+		constructor() {
+
+		}
+		${0}
+	}
+# Arrow Function
+snippet ->
+	(${1}) => ${0}
+# promise
+snippet prm
+	return ${1}
+		.then((${2}) => {
+			${3}
+		})
+		.catch((${4}) => {
+			${5}	
+		});${0}
+snippet prm{
+	return ${1}
+		.then(${2} => ${3})
+		.catch((${4}) => ${5});${0}
+# modules (imports and exports)
+snippet imp
+	import ${1} from '${2}';${0}
+snippet imp{
+	import { ${1} } from '${2}';${0}
+snippet exp
+	export ${0}
+snippet xd 
+	export default ${1};${0}
+snippet obja
+	Object.assign({}, ${1}, ${0});

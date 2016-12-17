@@ -1,0 +1,103 @@
+# --------------------------------------
+# Test Suites
+# --------------------------------------
+
+snippet suite5
+	describe("${1}", function() {
+
+		beforeEach(function() {
+
+		});
+
+		afterEach(function() {
+
+		});
+
+		${0}
+	});
+
+snippet suite
+	describe("${1}", () => {
+
+		beforeEach(() => {
+
+		});
+
+		afterEach(() => {
+
+		});
+
+		${0}
+	});
+# --------------------------------------
+# Test setup describe, it, beforeEach, afterEach
+# --------------------------------------
+snippet desc5
+	describe("${1}", function() {
+		${0}
+	});
+snippet desc
+	describe("${1}", () => {
+		${0}
+	});
+snippet it5
+	it("${1}", function() {
+		${0}
+	});
+snippet it
+	it("${1}", () => {
+		${0}
+	});
+snippet bef5
+	beforeEach(function() {
+		${0}
+	});
+snippet bef
+	beforeEach(() => {
+		${0}
+	});
+snippet aft5
+	afterEach(function() {
+		${0}
+	});
+snippet aft
+	afterEach(() => {
+		${0}
+	});
+# --------------------------------------
+# Chai Asserts (TDD style)
+# --------------------------------------
+snippet ashould
+	assert(${1}).should.${2};
+
+# --------------------------------------
+# Chai Assertions (BDD style)
+# --------------------------------------
+
+# --------------------------------------
+# Expect
+# --------------------------------------
+snippet eex
+	expect(${1}).to.exist;${0}
+snippet eeq
+	expect(${1}).to.equal(${2});${0}
+snippet ebe
+	expect(${1}).to.be.a(${2});${0}
+snippet elen
+	expect(${1}).to.have.length(${2});${0}
+
+# --------------------------------------
+# Should
+# --------------------------------------
+snippet sex
+	${1}.should.exist;
+snippet !sex 
+	${1}.should.not.exist;
+snippet sbe 
+	${1}.should.be.a(${2});${0}
+snippet seq
+	${1}.should.equal(${2});${0}
+snippet slen
+	${1}.should.have.length(${2});${0}
+snippet slaba
+	${1}.should.have.length.above(${2});${0}

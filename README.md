@@ -15,7 +15,15 @@ git clone https://github.com/LifeSource/vimi.git  ~/.vim
 ### Symbolic link
 
 ```
-ln -s ~/.vim/vimrc ~/.vim/.vimrc
+ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/zshrc ~/.zshrc
+ln -s ~/.vim/eslintrc ~/.eslintrc
+ln -s ~/.vim/editorconfig ~/.editorconfig
 ln -s ~/.vim/lifesource.zsh-theme ~/.ohmyzsh/themes/lifesource.zsh-theme
+```
+
+### Submodule installation
+```
+1. git submodule init
+2. git submodule update
 ```
