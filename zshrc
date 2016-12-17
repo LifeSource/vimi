@@ -7,7 +7,7 @@ export ZSH=/Users/kenrick/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="lifesource"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -83,3 +83,16 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Use Brew vim instead of system vim
+alias vi="/usr/local/bin/vim"
+alias vim="/usr/local/bin/vim"
+
+# Source profile
+alias sourceprofile="source ~/.zshrc"
+
+# NPM and Yarn alias
+alias npr="npm run"
+alias ya="yarn add"
+alias yad="yarn add --dev"
+alias yr="yarn remove"
