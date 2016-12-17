@@ -91,6 +91,9 @@ alias vim="/usr/local/bin/vim"
 # Source profile
 alias sourceprofile="source ~/.zshrc"
 
+# Z jump script
+. ~/.vim/z.sh
+
 # NPM and Yarn alias
 alias npr="npm run"
 alias ya="yarn add"
