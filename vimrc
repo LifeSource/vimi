@@ -99,14 +99,17 @@ map ,d( ds(
 map ,d' ds'
 map ,d[ ds[
 
-
 " --------------------------------------------------------------
 " NerdTree settings
 " --------------------------------------------------------------
 let NERDTReeShowHidden = 1
 let g:NERDTREEWinPos="left"
+" close vim if there is only nerdtree left open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " NerdTree key bindings
 map <C-n> :NERDTreeToggle<CR>
+"map <leader>r :NERDTreeFind<cr>
+map <C-m> :NERDTreeFind<cr>
 
 " --------------------------------------------------------------
 "  Syntastic
@@ -204,3 +207,15 @@ set wildignore+=*/node_modules/*,/*bower_components/*,/*jspm_packages/*,/*platfo
 let g:autoformat_autoindent = 0
 let g:autoformat_retab = 0
 let g:autoformat_remove_trailing_spaces = 0
+
+" ------------------------------------------------------------------------
+"  You Complete Me
+" ------------------------------------------------------------------------
+" automatically open and close the popup menu / preview window
+au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
+let g:nodejs_complete_config = { 'max_node_compl_len': 5 }
+
+"let g:ycm_min_num_of_chars_for_completion=5
+let g:ycm_auto_trigger = 1
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
