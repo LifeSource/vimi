@@ -12,3 +12,9 @@ colorscheme lifesource
 " Plugin specific settings
 " --------------------------------------------------------------
 " NerdTree settings
+let NERDTReeShowHidden = 1
+let g:NERDTREEWinPos="left"
+" NerdTree key bindings
+map <C-n> :NERDTreeToggle<CR>
+
+" --------------------------------------------------------------
