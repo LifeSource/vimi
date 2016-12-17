@@ -11,4 +11,5 @@ git clone https://github.com/LifeSource/vimi.git  ~/.vim
 
 ```
 ln -s ~/.vim/vimrc ~/.vim/.vimrc
+ln -s ~/.vim/zshrc ~/.zshrc
 ```
