@@ -21,3 +21,9 @@ ln -s ~/.vim/eslintrc ~/.eslintrc
 ln -s ~/.vim/editorconfig ~/.editorconfig
 ln -s ~/.vim/lifesource.zsh-theme ~/.ohmyzsh/themes/lifesource.zsh-theme
 ```
+
+### Submodule installation
+```
+1. git submodule init
+2. git submodule update
+```
