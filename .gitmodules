@@ -4,3 +4,24 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git@github.com:vim-syntastic/syntastic.git
+[submodule "bundle/emmet"]
+	path = bundle/emmet
+	url = git@github.com:mattn/emmet-vim.git
+[submodule "bundle/airline"]
+	path = bundle/airline
+	url = git@github.com:vim-airline/vim-airline.git
+[submodule "bundle/typescript"]
+	path = bundle/typescript
+	url = git@github.com:leafgarland/typescript-vim.git
+[submodule "bundle/coolor"]
+	path = bundle/coolor
+	url = git@github.com:KabbAmine/vCoolor.vim.git
+[submodule "bundle/pug"]
+	path = bundle/pug
+	url = git@github.com:digitaltoad/vim-pug.git
+[submodule "bundle/javascript"]
+	path = bundle/javascript
+	url = git@github.com:pangloss/vim-javascript.git
+[submodule "bundle/tern"]
+	path = bundle/tern
+	url = git@github.com:ternjs/tern_for_vim.git
