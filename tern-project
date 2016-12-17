@@ -1,0 +1,11 @@
+{
+  "libs": [
+    "browser",
+    "jquery",
+    "react",
+    "node"
+  ],
+  "plugins": {
+    "node": {}
+  }
+}
