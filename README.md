@@ -1,10 +1,11 @@
 # vimi
-This is my VIM setup used acrossed all my computers.
+This is my VIM setup used acrossed all my computers, it uses git submodule to maintain plugin updates
 
 ### Prerequisites
 
-- iterm2
-- ohmyzsh
+- iterm2   (iterm)
+- ohmyzsh  (oh my zsh)
+- Vim 7.4+ (homebrew)
 
 ### Installlation
 
