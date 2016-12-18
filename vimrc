@@ -140,17 +140,10 @@ let g:syntastic_check_on_wq = 0
 
 " Typescript
 let g:typescript_compiler_binary = 'tsc'
-let g:syntastic_typescript_tsc_fname=''
-
-let g:syntastic_always_poulate_loc_list = 1
-let g_syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_eslint_exec = ""
+"let g:syntastic_typescript_tsc_fname=''
+let g:syntastic_javascript_eslint_exec = "/usr/local/bin/eslint"
 let g:syntastic_javascript_checkers = ["eslint"]
 let g:syntastic_scss_checkers = ["scss_lint"]
-let g:tsuquyomi_disable_quickfix = 1
-let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
 
 let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"
@@ -166,6 +159,16 @@ endfunction
 
 nnoremap <silent> <C-e> :<C-u>call ToggleErrors()<CR>
 nnoremap <silent> <C-g> :lnext<CR>
+
+" ------------------------------------------------------------------------
+"  Tsuquyomi settings
+" ------------------------------------------------------------------------
+let g:tsuquyomi_disable_quickfix = 1
+let g:tsuquyomi_completion_detail = 1               " show method signature
+let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
+let g:tsuquyomi_use_dev_node_module=2
+let g:tsuquyomi_tsserver_path='/usr/local/bin/tsserver'
+" ------------------------------------------------------------------------
 
 "ActivateAddons vim-snippets snipmate
 let g:vim_json_syntax_conceal = 0
