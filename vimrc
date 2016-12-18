@@ -109,7 +109,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " NerdTree key bindings
 map <C-n> :NERDTreeToggle<CR>
 "map <leader>r :NERDTreeFind<cr>
-map <C-m> :NERDTreeFind<cr>
+map <leader>f  :NERDTreeFind<CR>
 
 " --------------------------------------------------------------
 "  Syntastic
