@@ -28,3 +28,25 @@ ln -s ~/.vim/lifesource.zsh-theme ~/.ohmyzsh/themes/lifesource.zsh-theme
 1. git submodule init
 2. git submodule update
 ```
+
+### Plugin configuations
+
+#### VimProc
+```
+1. cd ~/.vim/bundle/vimproc
+2. make
+3. popd
+```
+
+#### Tern
+```
+1. cd ~/.vim/bundle/tern
+2. npm install
+```
+
+#### YouCompleteMe
+```
+1. cd ~/.vim/bundle/YouCompleteMe
+2. ./install.py --all
+```
+
