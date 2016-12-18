@@ -64,6 +64,11 @@ vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
 
 " --------------------------------------------------------------
+"  Tagbar settings
+" --------------------------------------------------------------
+nmap <C-b> :TagbarToggle<CR>
+
+" --------------------------------------------------------------
 " Snipmate and Snippets
 " --------------------------------------------------------------
 imap jj <Plug>snipMateNextOrTrigger
@@ -76,11 +81,21 @@ let g:vcoolor_map = 'ç'
 let g:vcoolor_lowercase = 1
 
 " --------------------------------------------------------------
-" Emmet
+" Emmet settings
 " --------------------------------------------------------------
 vmap hh <C-y>,
 imap hh <C-y>,
 
+" --------------------------------------------------------------
+"  Autoformat settings
+" --------------------------------------------------------------
+noremap <C-f> :Autoformat<CR>
+
+" Disable the autoident, retab and remove trailing space
+let g:autoformat_autoindent = 0
+let g:autoformat_retab = 0
+let g:autoformat_remove_trailing_spaces = 0
+"
 " --------------------------------------------------------------
 " Vim-Surround mapping
 " --------------------------------------------------------------
@@ -109,7 +124,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " NerdTree key bindings
 map <C-n> :NERDTreeToggle<CR>
 "map <leader>r :NERDTreeFind<cr>
-map <C-m> :NERDTreeFind<cr>
+map <leader>f  :NERDTreeFind<CR>
 
 " --------------------------------------------------------------
 "  Syntastic

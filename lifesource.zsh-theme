@@ -1,4 +1,4 @@
-PROMPT='$fg[green]吳錦倫 $fg[yellow]$(getPwd)$fg[magenta] $(gitPromptInfo) $fg[red]
+PROMPT='$fg[green][$fg[white]吳錦倫$fg[green]] $fg[yellow]$(getPwd)$fg[magenta] $(gitPromptInfo) $fg[red] 
 $fg[green]~$fg[cyan]> $reset_color' 
 
 function getPwd() {
@@ -9,13 +9,13 @@ function getSpacing() {
 
     local git=$(gitPromptInfo)
     if [ ${#git} != 0 ]; then
-        ((git=${#git} - 1))
+        ((git=${#git} - 10))
     else
         git=0
     fi
 
     local termwidth
-    (( termwidth = ${COLUMNS} - 2 - ${#HOST} - ${#$(getPwd)} -${git} ))
+    (( termwidth = ${COLUMNS} - 1 - ${#HOST} - ${#$(getPwd)} -${git} ))
 
     local spacing=""
     for i in {1..$termwidth}; do
@@ -42,4 +42,3 @@ ZSH_THEME_GIT_PROMPT_PREFIX="<"
 ZSH_THEME_GIT_PROMPT_SUFFIX=">$reset_color"
 ZSH_THEME_GIT_PROMPT_DIRTY="$fg[red]+"
 ZSH_THEME_GIT_PROMPT_CLEAN="$fg[green]"
-RPROMPT="$(batteryCharge)"
