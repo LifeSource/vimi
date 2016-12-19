@@ -117,7 +117,7 @@ map ,d[ ds[
 " --------------------------------------------------------------
 " NerdTree settings
 " --------------------------------------------------------------
-let NERDTReeShowHidden = 1
+let NERDTreeShowHidden = 1
 let g:NERDTREEWinPos="left"
 " close vim if there is only nerdtree left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
