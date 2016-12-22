@@ -415,38 +415,43 @@ if &t_Co > 255
         " Cascading stylesheet customisation
         " ----------------------------------------
         hi cssComment              ctermfg=114     guifg=#87d787
-        hi cssTagName              ctermfg=118     guifg=#87ff00
+        hi cssTagName              ctermfg=11
         hi cssClassName            ctermfg=202     guifg=#ff5f00
-        hi cssClassNameDot         ctermfg=129     guifg=#af00ff
-        hi cssIdentifier           ctermfg=129     guifg=#af00ff
-        hi cssFontProp             ctermfg=226     guifg=#ffff00
-        hi cssColorProp            ctermfg=226     guifg=#ffff00
-        hi cssTextProp             ctermfg=226     guifg=#ffff00
-        hi cssBoxProp	             ctermfg=80      guifg=#5fd7ff
-        hi cssBorderProp	         ctermfg=80      guifg=#5fd7ff
-        hi cssBackgroundProp	     ctermfg=80      guifg=#5fd7ff
-        hi cssFunctionComma			   ctermfg=80      guifg=#5fd7ff
-        hi cssValueInteger			   ctermfg=118     guifg=#87ff00
-        hi cssValueNumber				   ctermfg=118     guifg=#87ff00
-        hi cssValueLength				   ctermfg=118     guifg=#87ff00
-        hi cssRenderProp           ctermfg=226     guifg=#ffff00
-        hi cssAuralProp            ctermfg=226     guifg=#ffff00
-        hi cssPagingProp           ctermfg=226     guifg=#ffff00
-        hi cssTableProp            ctermfg=226     guifg=#ffff00
-        hi cssUIProp		           ctermfg=226     guifg=#ffff00
         hi cssBraces               ctermfg=202     guifg=#ff5f00
+        hi cssClassNameDot         ctermfg=129     guifg=#af00ff
+        hi cssIdentifier           ctermfg=92
+        hi cssFontProp             ctermfg=118
+        hi cssBackgroundProp	     ctermfg=118
+        hi cssColorProp            ctermfg=118
+        hi cssBorderProp	         ctermfg=118
+        hi cssPositioningProp	     ctermfg=118
+        hi cssTransformProp	       ctermfg=118
+        hi cssBoxProp	             ctermfg=118
+        hi cssTextProp             ctermfg=118
+        hi cssTableProp            ctermfg=118
+        hi cssUIProp		           ctermfg=118
+        hi cssAuralProp            ctermfg=118
+        hi cssRenderProp           ctermfg=118
+        hi cssPagingProp           ctermfg=118
+        hi cssFunctionComma			   ctermfg=118
+        hi cssValueInteger			   ctermfg=15
+        hi cssValueNumber				   ctermfg=15
+        hi cssValueLength				   ctermfg=15
+        hi cssSelectorOp           ctermfg=118
+        hi cssSelectorOp2          ctermfg=118
         "hi cssAttrComma					   ctermfg=124     guifg=#af0000
         "hi cssNoise						     ctermfg=124		 guifg=#af0000
         hi cssGeneratedContentProp ctermfg=118     guifg=#87ff00 
+        hi cssFunction             ctermfg=118
         hi cssFunctionName         ctermfg=212     guifg=#ff87d7
         hi cssInclude              ctermfg=10
         hi cssIncludeKeyword       ctermfg=10      
-        hi cssUnitDecorators			 ctermfg=212     guifg=#ff87d7
+        hi cssUnitDecorators			 ctermfg=15
         hi cssPseudoClass				   ctermfg=45 	   guifg=#00d7ff
         hi cssPseudoClassId				 ctermfg=45 	   guifg=#00d7ff
-        hi cssFlexibleBoxProp			 ctermfg=45 	   guifg=#00d7ff
-        hi cssFlexibleBoxAttr			 ctermfg=92 	   guifg=#8700d7
         hi cssMultiColumnProp			 ctermfg=45 	   guifg=#00d7ff
+        hi cssFlexibleBoxAttr			 ctermfg=92 	   guifg=#8700d7
+        hi cssFlexibleBoxProp			 ctermfg=118
 
         " ----------------------------------------
         "  Sass Colour Highlight
@@ -460,7 +465,7 @@ if &t_Co > 255
         hi sassCssAttribute        ctermfg=80
         hi sassProperty            ctermfg=80
         hi sassMixinName           ctermfg=30
-        hi sassFunctionName        ctermfg=30     
+        hi sassFunctionName        ctermfg=118     
         hi sassFunctionDecl        ctermfg=30     
 
         " ----------------------------------------
