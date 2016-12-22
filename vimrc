@@ -29,7 +29,7 @@ set nohidden
 set ignorecase
 set incsearch       " incremental search
 set laststatus=2
-
+set listchars=eol:⏎,space:¬
 " --------------------------------------------------------------
 "  Clipboard and mouse
 " --------------------------------------------------------------
