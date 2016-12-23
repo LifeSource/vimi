@@ -71,6 +71,9 @@ nmap <C-b> :TagbarToggle<CR>
 " --------------------------------------------------------------
 " Snipmate and Snippets
 " --------------------------------------------------------------
+let g:snipMate = get(g:, 'snipMate', {}) " Allow for vimrc re-sourcing
+let g:snipMate.scope_aliases = {}
+let g:snipMate.scope_aliases['typescript'] = 'ruby,javascript'
 imap jj <Plug>snipMateNextOrTrigger
 imap <tab> <Plug>snipMateNextOrTrigger
 

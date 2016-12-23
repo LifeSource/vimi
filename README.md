@@ -23,6 +23,14 @@ ln -s ~/.vim/editorconfig ~/.editorconfig
 ln -s ~/.vim/lifesource.zsh-theme ~/.ohmyzsh/themes/lifesource.zsh-theme
 ```
 
+### Javascript snippets links
+```
+ln -s ~/.vim/snippets/js.snippets ~/.vim/bundle/snippets/snippets/javascript/js.snippets
+ln -s ~/.vim/snippets/node.snippets ~/.vim/bundle/snippets/snippets/javascript/node.snippets
+ln -s ~/.vim/snippets/react.snippets ~/.vim/bundle/snippets/snippets/javascript/react.snippets
+ln -s ~/.vim/snippets/testing.snippets ~/.vim/bundle/snippets/snippets/javascript/testing.snippets
+```
+
 ### Submodule installation
 ```
 1. git submodule init
@@ -47,6 +55,7 @@ ln -s ~/.vim/lifesource.zsh-theme ~/.ohmyzsh/themes/lifesource.zsh-theme
 #### YouCompleteMe
 ```
 1. cd ~/.vim/bundle/YouCompleteMe
-2. ./install.py --all
+2. git submodule update --init --recursive
+3. ./install.py --all
 ```
 
