@@ -387,13 +387,15 @@ if &t_Co > 255
         " ----------------------------------------
         " HTML specific configuration
         " ----------------------------------------
-        hi htmlTagName	      ctermfg=39
+        hi htmlTagName	      ctermfg=221
         hi htmlTag	          ctermfg=154
         hi htmlEndTag	        ctermfg=154    
         hi htmlArg            ctermfg=197
         hi htmlComment        ctermfg=114     guifg=#87d787
         hi htmlCommentPart    ctermfg=114     guifg=#87d787
         "hi htmlScriptTag     ctermfg=67      guifg=#00d7ff
+        hi htmlSpecial        ctermfg=118
+        hi htmlSpecialChar    ctermfg=118
         hi htmlSpecialTagName ctermfg=209     guifg=#ff875f
         hi htmlTagN           ctermfg=209     guifg=#ff875f
 
@@ -419,7 +421,7 @@ if &t_Co > 255
         hi cssClassName            ctermfg=202     guifg=#ff5f00
         hi cssBraces               ctermfg=202     guifg=#ff5f00
         hi cssClassNameDot         ctermfg=129     guifg=#af00ff
-        hi cssIdentifier           ctermfg=92
+        hi cssIdentifier           ctermfg=214
         hi cssFontProp             ctermfg=118
         hi cssBackgroundProp	     ctermfg=118
         hi cssColorProp            ctermfg=118
