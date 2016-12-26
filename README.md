@@ -18,6 +18,7 @@ git clone https://github.com/LifeSource/vimi.git  ~/.vim
 ```
 ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/zshrc ~/.zshrc
+ln -s ~/.vim/gitgnore_global ~/.gitignore_global
 ln -s ~/.vim/eslintrc ~/.eslintrc
 ln -s ~/.vim/editorconfig ~/.editorconfig
 ln -s ~/.vim/lifesource.zsh-theme ~/.ohmyzsh/themes/lifesource.zsh-theme
