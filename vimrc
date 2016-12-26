@@ -242,3 +242,9 @@ let g:nodejs_complete_config = { 'max_node_compl_len': 5 }
 let g:ycm_auto_trigger = 1
 let g:ycm_key_list_select_completion=[]
 let g:ycm_key_list_previous_completion=[]
+
+" ------------------------------------------------------------------------
+" TernJS mappings 
+" ------------------------------------------------------------------------
+imap <C-r> :TernRefs<CR>
+nmap <C-r> :TernRefs<CR>
