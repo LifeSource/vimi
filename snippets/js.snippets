@@ -36,6 +36,17 @@ snippet ief
 	}
 
 # ---------------------------------------------
+# Loops 
+# ---------------------------------------------
+snippets fof
+	for (let ${1} of ${2}) {
+		${0}
+	}
+snippets efor
+	for (let i = 0; i < ${1}.length; i++) {
+		${0}
+	}	
+# ---------------------------------------------
 # Functions, IIFE
 # ---------------------------------------------
 snippet f)
@@ -59,16 +70,21 @@ snippet iife
 		"use strict";
 		${0}
 	})(${1});
+
+# ---------------------------------------------
+# Built-in objects and functions
+# ---------------------------------------------
+snippet tof
+	typeof ${0}
+snippet iof
+	${0} instanceof ${1}
+
 # ---------------------------------------------
 # JavaScript ES6
 # ---------------------------------------------
 
 # ES6 function
 snippet efn
-	${1}(${2}) {
-		${0}
-	}
-snippet 6f
 	${1}(${2}) {
 		${0}
 	}
@@ -85,7 +101,12 @@ snippet ctor
 snippet cls
 	class ${1} {
 		constructor() {
-
+		}
+		${0}
+	}
+snippet ecls
+	export default class ${1} {
+		constructor() {
 		}
 		${0}
 	}
@@ -108,7 +129,7 @@ snippet prm{
 # modules (imports and exports)
 snippet imp
 	import ${1} from '${2}';${0}
-snippet imp{
+snippet nimp
 	import { ${1} } from '${2}';${0}
 snippet exp
 	export ${0}
@@ -116,3 +137,4 @@ snippet xd
 	export default ${1};${0}
 snippet obja
 	Object.assign({}, ${1}, ${0});
+
