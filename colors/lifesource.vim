@@ -278,8 +278,7 @@ if &t_Co > 255
 
         hi Comment			ctermfg=114                             guifg=#87d787
 
-        "hi LineNr			  ctermfg=255             ctermbg=235     guifg=#ffffff 
-        hi LineNr			  ctermfg=118             ctermbg=235     guifg=#ffffff 
+        hi LineNr			  ctermfg=255             ctermbg=235     guifg=#ffffff 
         hi NonText			ctermfg=239
         hi SpecialKey		ctermfg=239
         hi Special      ctermfg=39
