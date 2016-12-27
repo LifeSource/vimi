@@ -243,7 +243,6 @@ if &t_Co > 255
     if exists("g:rehash256") && g:rehash256 == 1
         hi Normal            ctermfg=252   ctermbg=234                    guifg=#d0d0d0
         hi CursorLine                      ctermbg=136    cterm=none      guifg=#af8700
-        "hi CursorLine                      ctermbg=234    cterm=none      guifg=#1c1c1c
         hi CursorLineNr      ctermfg=118                  cterm=none      guifg=#87ff00
 
         hi Boolean           ctermfg=141                             guifg=#af87ff
@@ -256,7 +255,8 @@ if &t_Co > 255
 
         hi DiffDelete        ctermfg=125        ctermbg=233
 
-        hi Directory         ctermfg=32			    cterm=bold      guifg=#71bbd6
+        "hi Directory         ctermfg=32			    cterm=bold      guifg=#71bbd6
+        hi Directory         ctermfg=80			    cterm=bold      guifg=#71bbd6
         hi Error             ctermfg=196        ctermbg=none   
         hi Exception         ctermfg=215			  cterm=bold      guifg=#ffaf5f
         hi Float             ctermfg=171
@@ -278,7 +278,8 @@ if &t_Co > 255
 
         hi Comment			ctermfg=114                             guifg=#87d787
 
-        hi LineNr			  ctermfg=255             ctermbg=235     guifg=#ffffff 
+        "hi LineNr			  ctermfg=255             ctermbg=235     guifg=#ffffff 
+        hi LineNr			  ctermfg=118             ctermbg=235     guifg=#ffffff 
         hi NonText			ctermfg=239
         hi SpecialKey		ctermfg=239
         hi Special      ctermfg=39
@@ -311,7 +312,6 @@ if &t_Co > 255
         hi typescriptEndColons               ctermfg=202
         hi typescriptGlobalObjects           ctermfg=221
         hi typescriptInterpolationDelimiter  ctermfg=92
-
 
         " ---------------------------------------
         " Javascript specific configuration
