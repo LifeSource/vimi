@@ -43,6 +43,7 @@ nmap <C-d> :put +<CR>
 " --------------------------------------------------------------
 map zz :w<CR>
 map zx :wq!<CR>
+map qq :qa!<CR>
 map <c-l> <ESC>:set list!<CR>       " toggle invisible characters         
 " Vim buffer management
 nnoremap ,q :bd<CR>
@@ -87,7 +88,7 @@ let g:vcoolor_lowercase = 1
 " Emmet settings
 " --------------------------------------------------------------
 let g:user_emmet_install_global = 0
-autocmd FileType html,pug,jade,css,scss EmmetInstall
+autocmd FileType html,pug,jade,css,scss,js,jsx,ts,tsx  EmmetInstall
 vmap hh <C-y>,
 imap hh <C-y>,
 
