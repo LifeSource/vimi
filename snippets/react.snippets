@@ -26,7 +26,7 @@ snippet rcomp5
 	});
 
 	module.exports = $1;
-
+# Stateful component
 snippet rcomp
 	import React, {PropTypes} from "react";
 
@@ -42,13 +42,12 @@ snippet rcomp
 		}
 	}
 
-	$1.PropTypes = {
+	$1.propTypes = {
 		
 	};
 
 	export default $1;
-
-
+# Stateless Component
 snippet scomp
 	import React, { PropTypes } from 'react';
 
@@ -61,7 +60,7 @@ snippet scomp
 	};
 
 	export default $1;
-
+# Redux container component
 snippet xcomp
 	import React, { PropTypes } from 'react';
 	import { connect } from 'react-redux';
