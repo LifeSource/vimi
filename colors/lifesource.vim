@@ -348,13 +348,15 @@ if &t_Co > 255
         hi jsOf                              ctermfg=129     guifg=#af00ff
         hi jsModules                         ctermfg=129     guifg=#af00ff
         hi jsModuleWords                     ctermfg=129     guifg=#af00ff
-        hi jsClass                           ctermfg=202     guifg=#ff5f00
+        hi jsClassKeyword                    ctermfg=214
+        hi jsClassBraces                     ctermfg=160
+        hi jsObjectBraces                    ctermfg=160
         hi jsGlobalObjects                   ctermfg=221     guifg=#ffd75f
         hi jsCommentToDo                     ctermfg=214     guifg=#ffaf00
         hi jsLineComment                     ctermfg=114     guifg=#87d787
         hi jsComment                         ctermfg=114     guifg=#87d787
         hi jsObjectKey                       ctermfg=80
-        hi jsBraces                          ctermfg=214
+        hi jsBraces                          ctermfg=160
         hi jsBrackets                        ctermfg=10      guifg=#00ff00
         hi jsParens                          ctermfg=160     guifg=#d70000
         hi javaScriptBraces                  ctermfg=10
