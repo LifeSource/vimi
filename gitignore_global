@@ -35,3 +35,9 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Progrmaming
+######################
+logs/
+node_modules/
+bower_components/
