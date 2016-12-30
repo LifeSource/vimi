@@ -1,5 +1,13 @@
 # React Snippets
 
+# Imports
+snippet impr
+	import React from 'react'
+snippet impl
+	import {Link} from 'react-router'
+snippet impt
+	import {PropTypes} from 'react'
+
 # Rendering
 snippet rrender
 	React.render(<${1} />, ${2});${0}
@@ -23,7 +31,6 @@ snippet rcomp
 	import React, {PropTypes} from "react";
 
 	class ${1:} extends React.Component {
-
 		constructor(props) {
 			super(props);
 		}
@@ -67,13 +74,13 @@ snippet xcomp
 		
 	};
 
-	function mapStateToProps(state, ownProps) {
+	const mapStateToProps = (state, ownProps) => {
 
 	}
 
-	function mapDispatchToProps(dispatch) {
+	const mapDispatchToProps(dispatch) => {
 		return {
-			
+
 		};
 	}
 

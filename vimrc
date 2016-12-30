@@ -87,8 +87,8 @@ let g:vcoolor_lowercase = 1
 " --------------------------------------------------------------
 " Emmet settings
 " --------------------------------------------------------------
-let g:user_emmet_install_global = 0
-autocmd FileType html,pug,jade,css,scss,js,jsx,ts,tsx  EmmetInstall
+let g:user_emmet_install_global = 1
+"autocmd FileType html,pug,jade,css,scss,js,jsx,ts,tsx  EmmetInstall
 vmap hh <C-y>,
 imap hh <C-y>,
 

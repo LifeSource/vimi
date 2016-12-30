@@ -24,7 +24,7 @@
   },
   "rules": {
     "strict": [ 2, "global" ],
-    "semi": 2,
+    "semi": [2, "never"],
     "eqeqeq": 2,
     "curly": 2,
     "default-case": 2,
@@ -46,7 +46,7 @@
     "no-undefined": 2,
     "no-undef-init": 2,
     "no-use-before-define": [ 2, "nofunc" ],
-    "quotes": [ 2, "double" ],
+    "quotes": [ 2, "single" ],
     "yoda": 2
   },
   "env": {
