@@ -358,7 +358,7 @@ if &t_Co > 255
         hi jsObjectKey                       ctermfg=80
         hi jsBraces                          ctermfg=160
         hi jsBrackets                        ctermfg=10      guifg=#00ff00
-        hi jsParens                          ctermfg=160     guifg=#d70000
+        hi jsParens                          ctermfg=221
         hi javaScriptBraces                  ctermfg=10
         hi javaScriptParens                  ctermfg=255
         hi javaScriptStringD                 ctermfg=212     guifg=#ff87d7

@@ -41,15 +41,20 @@ nmap <C-d> :put +<CR>
 " --------------------------------------------------------------
 " File management
 " --------------------------------------------------------------
+
+" Saving and exiting
 map zz :w<CR>
 map zx :wq!<CR>
 map qq :qa!<CR>
 map <c-l> <ESC>:set list!<CR>       " toggle invisible characters         
+map <c-h> <ESC>:%s/;//gc<CR>
+
 " Vim buffer management
 nnoremap ,q :bd<CR>
 nnoremap ,w <C-w>v
 nnoremap ,v <C-w>s
 nnoremap ,, <C-w><C-w>
+
 " Buffer movement (NOTE: the characters map below are ALT + <key> combination)
 " ‘ => ALT + ] and “ => ALT + [
 map ‘ :bnext<CR>
