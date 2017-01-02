@@ -3,7 +3,9 @@
     "browser",
     "jquery",
     "react",
-    "node"
+    "node",
+    "chai",
+    "mocha"
   ],
   "plugins": {
     "node": {}
