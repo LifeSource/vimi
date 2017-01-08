@@ -10,68 +10,68 @@ snippet impt
 
 # Rendering
 snippet rrender
-	React.render(<${1} />, ${2});${0}
+	React.render(<${1} />, ${2})${0}
 snippet rr
-	render(${1}, document.getElementById("${2}"));${0}
+	render(${1}, document.getElementById("${2}"))${0}
 # Component creation
 snippet rcomp5
-	var React = require("react");
+	var React = require("react")
 
 	var ${1:} = React.createClass({
 		render: function () {
 			return (
 				${0}
-			);
+			)
 		}
-	});
+	})
 
-	module.exports = $1;
+	module.exports = $1
 # Stateful component
 snippet rcomp
-	import React, {PropTypes} from "react";
+	import React, {PropTypes} from "react"
 
 	class ${1:} extends React.Component {
 		constructor(props) {
-			super(props);
+			super(props)
 		}
 
 		render() {
 			return (
 				${0}
-			);
+			)
 		}
 	}
 
 	$1.propTypes = {
 		
-	};
+	}
 
-	export default $1;
+	export default $1
 # Stateless Component
 snippet scomp
-	import React, { PropTypes } from 'react';
+	import React, { PropTypes } from 'react'
 
 	const ${1:} = (${2}) => (
 		${0}
-	);
+	)
 
 	$1.propTypes = {
 		
-	};
+	}
 
-	export default $1;
+	export default $1
 # Redux container component
 snippet xcomp
-	import React, { PropTypes } from 'react';
-	import { connect } from 'react-redux';
+	import React, { PropTypes } from 'react'
+	import { connect } from 'react-redux'
 
 	const ${1:} = (${2}) => (
 		${0}
-	);
+	)
 
 	$1.propTypes = {
 		
-	};
+	}
 
 	const mapStateToProps = (state, ownProps) => {
 
@@ -80,37 +80,37 @@ snippet xcomp
 	const mapDispatchToProps(dispatch) => {
 		return {
 
-		};
+		}
 	}
 
 	export default connect(
 		mapStateToProps,
 		mapDispatchToProps
-	)(${1});
+	)(${1})
 
 snippet pt
 	React.PropTypes.${1}
 
 snippet rpt
-	static propTypes = { ${1} };${0}
+	static propTypes = { ${1} }${0}
 
 snippet dpt
-	static defaultProps = { ${1} };${0}
+	static defaultProps = { ${1} }${0}
 
 # return
 snippet rt
 	return (
 		${0}
-	);
+	)
 # Redux
 snippet rdxcomp 
-	import React, { PropTypes } from 'react';
-	import { connect } from 'react-redux';
-	import { bindActionCreators } from 'redux';
+	import React, { PropTypes } from 'react'
+	import { connect } from 'react-redux'
+	import { bindActionCreators } from 'redux'
 
 	class ${1:} extends React.Component {
 		constructor(props, context) {
-			super(props, context);
+			super(props, context)
 		}
 
 		render() {
@@ -118,13 +118,13 @@ snippet rdxcomp
 				<div>
 					${0}
 				</div>
-			);
+			)
 		}
 	}
 
 	$1.propTypes = {
 
-	};
+	}
 
 	function mapStateToProps(state, ownProps) {
 		// ownProps
@@ -133,7 +133,7 @@ snippet rdxcomp
 	function mapDispatchToProps(dispatch) {
 		return {
 			actions: bindActionCreators(actions, dispatch)
-		};
+		}
 	}
 
-	export default connect(mapStateToProps, mapDispatchToProps)($1);
+	export default connect(mapStateToProps, mapDispatchToProps)($1)

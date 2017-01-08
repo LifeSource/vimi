@@ -2,9 +2,9 @@
 # JavaScript ES5
 # ---------------------------------------------
 snippet clg
-	console.log(${1:});${0}
+	console.log(${1:})${0}
 snippet cer
-	console.error(${1:});${0}
+	console.error(${1:})${0}
 snippet doc
 	document
 snippet alr
@@ -17,22 +17,22 @@ snippet sto
 # Object, Constants and Variable  Creation
 # ---------------------------------------------
 snippet vv
-	let ${1} = ${2};
+	let ${1} = ${2}
 
 snippet vr
-	let ${1} = [${2}];
+	let ${1} = [${2}]
 
 snippet vb
 	let ${1} = {
 		${0}
-	};
+	}
 snippet vt
 	${${1}}${0}
 snippet vlet
-	let ${1} = ${0};
+	let ${1} = ${0}
 
 snippet vconst
-	const ${1} = ${0};
+	const ${1} = ${0}
 
 # ---------------------------------------------
 # Conditional
@@ -54,7 +54,7 @@ snippet fof
 		${0}
 	}
 snippet efor
-	for (let i = 0; i < ${1}.length; i++) {
+	for (let i = 0 i < ${1}.length i++) {
 		${0}
 	}	
 snippet whl
@@ -67,11 +67,11 @@ snippet whl
 snippet f)
 	function (${1}) {
 		${0}
-	});
-snippet	f;
+	})
+snippet	f
 	function (${1}) {
 		${0}
-	};
+	}
 snippet	f,
 	function (${1}) {
 		${0}
@@ -82,9 +82,9 @@ snippet pfn
 	}
 snippet iife
 	(function (${2}) {
-		"use strict";
+		"use strict"
 		${0}
-	})(${1});
+	})(${1})
 
 # ---------------------------------------------
 # Built-in objects and functions
@@ -132,20 +132,20 @@ snippet prm
 		})
 		.catch((${4}) => {
 			${5}	
-		});${0}
+		})${0}
 snippet prm{
 	return ${1}
 		.then(${2} => ${3})
-		.catch((${4}) => ${5});${0}
+		.catch((${4}) => ${5})${0}
 # modules (imports and exports)
 snippet imp
-	import ${1} from '${2}';${0}
+	import ${1} from '${2}'${0}
 snippet nimp
-	import { ${1} } from '${2}';${0}
+	import { ${1} } from '${2}'${0}
 snippet exp
 	export ${0}
 snippet xd 
-	export default ${1};${0}
+	export default ${1}${0}
 snippet obja
-	Object.assign({}, ${1}, ${0});
+	Object.assign({}, ${1}, ${0})
 

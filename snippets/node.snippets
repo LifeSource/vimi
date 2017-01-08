@@ -4,24 +4,24 @@ snippet mex
 snippet mde
 	module.exports = function (${1}) {
 		${0}
-	};
+	}
 # Express Default
 snippet exd
 	var express = require("express"),
 		mongoose = require("mongoose"),
-		bodyParser = require("body-parser");
+		bodyParser = require("body-parser")
 
-	var app = express();
-	var config = require("../config")();
+	var app = express()
+	var config = require("../config")()
 
-	app.use(bodyParser.urlencoded({ extended: true }));
-	app.use(bodyParser.json());
+	app.use(bodyParser.urlencoded({ extended: true }))
+	app.use(bodyParser.json())
 
-	app.use(express.static(config.client));
-	app.use(express.static(config.root));
-	app.use("/*", express.static(config.index));
+	app.use(express.static(config.client))
+	app.use(express.static(config.root))
+	app.use("/*", express.static(config.index))
 
-	app.listen(config.port);
+	app.listen(config.port)
 	
 # require
 snippet req
@@ -36,37 +36,37 @@ snippet hfn
 		${0}
 	}
 snippet apu
-	app.use(${1}, ${2});
+	app.use(${1}, ${2})
 	${0}
 # Mongoose model creation
 snippet mgm
-	var mongoose = require("mongoose");
+	var mongoose = require("mongoose")
 
 	var ${1:Schema} = new mongoose.Schema({
 		${0}
-	});
+	})
 
-	module.exports = mongoose.model("${2}", $1, "${3}");
+	module.exports = mongoose.model("${2}", $1, "${3}")
 
 # API Controllers and Routers
 snippet apirouter
 	var express = require("express"),
 		${1:} = express.Router(),
-		${3:} = require("../controllers/${2}")();
+		${3:} = require("../controllers/${2}")()
 
-	$1.use("/:id", $3.use);
+	$1.use("/:id", $3.use)
 
 	$1.route("/")
 		.get($3.query)
-		.post($3.post);
+		.post($3.post)
 
 	$1.route("/:id")
 		.get($3.get)
 		.put($3.put)
 		.patch($3.patch)
-		.delete($3.remove);
+		.delete($3.remove)
 
-	module.exports = $1;
+	module.exports = $1
 
 snippet apictrl
 	module.exports = function() {
@@ -79,9 +79,9 @@ snippet apictrl
 			put: put,
 			patch: patch,
 			remove: remove
-		};
+		}
 
-		return ${1:};
+		return ${1:}
 
 		function use(req, res, next) {
 			
@@ -110,11 +110,11 @@ snippet apictrl
 		function remove(req, res) {
 
 		}
-	};
+	}
 # Req and Res functions
 snippet resj
-	res.json(${1});
+	res.json(${1})
 snippet rst
-	res.status(${1}).send(${2});${3}
+	res.status(${1}).send(${2})${3}
 snippet reserr
-	res.status(500).send(err);
+	res.status(500).send(err)

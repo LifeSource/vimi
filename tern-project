@@ -2,11 +2,9 @@
   "libs": [
     "browser",
     "jquery",
-    "react",
     "node",
     "chai",
-    "mocha",
-    "rxjs"
+    "mocha"
   ],
   "plugins": {
     "node": {}
