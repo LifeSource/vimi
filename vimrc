@@ -140,23 +140,22 @@ map <leader>f  :NERDTreeFind<CR>
 " --------------------------------------------------------------
 "  Syntastic
 " --------------------------------------------------------------
-let g:statline_syntastic = 0
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
+"let g:statline_syntastic = 0
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
 " Typescript
-let g:typescript_compiler_binary = 'tsc'
+"let g:typescript_compiler_binary = 'tsc'
 "let g:syntastic_typescript_tsc_fname=''
 let g:syntastic_javascript_eslint_exec = "/usr/local/bin/eslint"
 let g:syntastic_javascript_checkers = ["eslint"]
 let g:syntastic_scss_checkers = ["scss_lint"]
-let g:syntastic_swift_checkers = ['swiftlint']
 
 let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"

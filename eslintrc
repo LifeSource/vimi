@@ -24,7 +24,7 @@
   },
   "rules": {
     "strict": [ 2, "global" ],
-    "semi": [1, "never"],
+    "semi": [2, "never"],
     "eqeqeq": 2,
     "curly": 2,
     "default-case": 2,
@@ -46,13 +46,12 @@
     "no-delete-var": 2,
     "no-label-var": 2,
     "no-undef-init": 2,
-    "no-use-before-define": [ 2, "nofunc" ],
     "no-multi-spaces": 2,
     "no-undef": 2,
     "no-shadow": 2,
     "no-undefined": 2,
     "no-unused-vars": 2,
-    "no-use-before-define": 2,
+    "no-use-before-define": ["error", { "functions": true, "classes": true }],
     "yoda": 2
   },
   "env": {
