@@ -140,6 +140,7 @@ map <leader>f  :NERDTreeFind<CR>
 " --------------------------------------------------------------
 "  Syntastic
 " --------------------------------------------------------------
+let g:statline_syntastic = 0
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -155,6 +156,7 @@ let g:typescript_compiler_binary = 'tsc'
 let g:syntastic_javascript_eslint_exec = "/usr/local/bin/eslint"
 let g:syntastic_javascript_checkers = ["eslint"]
 let g:syntastic_scss_checkers = ["scss_lint"]
+let g:syntastic_swift_checkers = ['swiftlint']
 
 let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"
@@ -227,7 +229,7 @@ let g:ctrlp_working_path_mode = "ra"
 let g:ctrlp_show_hidden = 1
 set runtimepath^=~/vim/bundle/ctrlp.vim
 " ignore the directories and files with the following extensions
-set wildignore+=*/node_modules/*,/*bower_components/*,/*jspm_packages/*,/*platforms/*,*/vendor/*,*.so,*.swp,*.zip,*~
+set wildignore+=*/node_modules/*,/*bower_components/*,/*jspm_packages/*,/*platforms/*,*/vendor/*,*/dist/*,*.so,*.swp,*.zip,*~
 
 
 " ------------------------------------------------------------------------

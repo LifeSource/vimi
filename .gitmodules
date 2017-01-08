@@ -79,3 +79,9 @@
 [submodule "bundle/devicons"]
 	path = bundle/devicons
 	url = git@github.com:ryanoasis/vim-devicons.git
+[submodule "bundle/vimagit"]
+	path = bundle/vimagit
+	url = git@github.com:jreybert/vimagit.git
+[submodule "bundle/swift"]
+	path = bundle/swift
+	url = git@github.com:keith/swift.vim.git
