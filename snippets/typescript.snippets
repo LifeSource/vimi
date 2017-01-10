@@ -11,14 +11,14 @@ snippet tctor
 	constructor(${1}: ${2:_typeName}) {
 	}
 snippet timp
-	import { ${1} } from '${2}'${0}
+	import { ${1} } from "${2}"${0}
 # ------------------------------
 # Angular 2 snippets
 # ------------------------------
 
 # Module
 snippet ngmod
-	import { NgModule } from '@angular/core'
+	import { NgModule } from "@angular/core"
 
 	@NgModule({
 		imports: [],
@@ -29,11 +29,11 @@ snippet ngmod
 	}$2
 # Component
 snippet ngcomp
-	import { Component } from '@angular/core'
+	import { Component } from "@angular/core"
 
 	@Component({
-		selector: '',
-		templateUrl: '',
+		selector: "",
+		templateUrl: "",
 		styleUrls: []
 	})
 	export class ${1}Component {
@@ -41,8 +41,8 @@ snippet ngcomp
 	}
 # Service
 snippet ngserv
-	import { Injectable } from '@angular/core'
-	import { Http } from '@angular/http'
+	import { Injectable } from "@angular/core"
+	import { Http } from "@angular/http"
 
 	@Injectable()
 	export class ${1}Service {
@@ -53,7 +53,7 @@ snippet ngserv
 # Test Suites
 # --------------------------------------
 snippet suite5
-	describe('${1}', function() {
+	describe("${1}", function() {
 		beforeEach(function() {
 
 		})
@@ -65,7 +65,7 @@ snippet suite5
 	})
 
 snippet suite
-	describe('${1}', () => {
+	describe("${1}", () => {
 
 		beforeEach(() => {
 
@@ -74,6 +74,5 @@ snippet suite
 		afterEach(() => {
 
 		})
-
 		${0}
 	})

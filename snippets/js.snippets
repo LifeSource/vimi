@@ -18,10 +18,8 @@ snippet sto
 # ---------------------------------------------
 snippet vv
 	let ${1} = ${2}
-
 snippet vr
 	let ${1} = [${2}]
-
 snippet vb
 	let ${1} = {
 		${0}
@@ -30,7 +28,6 @@ snippet vt
 	${${1}}${0}
 snippet vlet
 	let ${1} = ${0}
-
 snippet vconst
 	const ${1} = ${0}
 
@@ -139,9 +136,9 @@ snippet prm{
 		.catch((${4}) => ${5})${0}
 # modules (imports and exports)
 snippet imp
-	import ${1} from '${2}'${0}
+	import ${1} from "${2}"${0}
 snippet nimp
-	import { ${1} } from '${2}'${0}
+	import { ${1} } from "${2}"${0}
 snippet exp
 	export ${0}
 snippet xd 

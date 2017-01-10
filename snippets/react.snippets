@@ -2,11 +2,11 @@
 
 # Imports
 snippet impr
-	import React from 'react'
+	import React from "react"
 snippet impl
-	import {Link} from 'react-router'
+	import {Link} from "react-router"
 snippet impt
-	import {PropTypes} from 'react'
+	import {PropTypes} from "react"
 
 # Rendering
 snippet rrender
@@ -49,7 +49,7 @@ snippet rcomp
 	export default $1
 # Stateless Component
 snippet scomp
-	import React, { PropTypes } from 'react'
+	import React, { PropTypes } from "react"
 
 	const ${1:} = (${2}) => (
 		${0}
@@ -62,8 +62,8 @@ snippet scomp
 	export default $1
 # Redux container component
 snippet xcomp
-	import React, { PropTypes } from 'react'
-	import { connect } from 'react-redux'
+	import React, { PropTypes } from "react"
+	import { connect } from "react-redux"
 
 	const ${1:} = (${2}) => (
 		${0}
@@ -104,9 +104,9 @@ snippet rt
 	)
 # Redux
 snippet rdxcomp 
-	import React, { PropTypes } from 'react'
-	import { connect } from 'react-redux'
-	import { bindActionCreators } from 'redux'
+	import React, { PropTypes } from "react"
+	import { connect } from "react-redux"
+	import { bindActionCreators } from "redux"
 
 	class ${1:} extends React.Component {
 		constructor(props, context) {
