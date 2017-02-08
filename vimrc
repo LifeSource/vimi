@@ -35,7 +35,7 @@ set listchars=eol:⏎,space:¬
 " --------------------------------------------------------------
 set mouse=a
 vmap <C-d> :put +<CR>
-imap <C-d> :put +<CR>
+imap <C-d> <ESC>:put +<CR>
 nmap <C-d> :put +<CR>
 
 " --------------------------------------------------------------
@@ -48,6 +48,7 @@ map zx :wq!<CR>
 map qq :qa!<CR>
 map <c-l> <ESC>:set list!<CR>       " toggle invisible characters         
 map <c-h> <ESC>:%s/;//gc<CR>
+map <c-8> <ESC>:%s/\'/\"/gc<CR>
 
 " Vim buffer management
 nnoremap ,q :bd<CR>
