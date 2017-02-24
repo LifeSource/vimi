@@ -17,18 +17,18 @@ snippet suite5
 	})
 
 snippet suite
+	import { assert } from 'chai'
+
 	describe("${1}", () => {
+		beforeEach(() => {})
 
-		beforeEach(() => {
+		afterEach(() => {})
 
+		it("should work", () => {
+			${0}
 		})
-
-		afterEach(() => {
-
-		})
-
-		${0}
 	})
+
 # --------------------------------------
 # Test setup describe, it, beforeEach, afterEach
 # --------------------------------------
@@ -67,6 +67,10 @@ snippet aft
 # --------------------------------------
 # Chai Asserts (TDD style)
 # --------------------------------------
+snippet ast
+	assert.${0}
+snippet asq
+	assert.equal(${0})
 snippet ashould
 	assert(${1}).should.${2}
 
