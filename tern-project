@@ -1,12 +1,9 @@
 {
   "libs": [
     "browser",
-    "jquery",
-    "node",
-    "chai",
-    "mocha"
+    "mocha",
+    "chai"
   ],
   "plugins": {
-    "node": {}
   }
 }

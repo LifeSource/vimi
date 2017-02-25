@@ -99,3 +99,5 @@ alias npr="npm run"
 alias ya="yarn add"
 alias yad="yarn add --dev"
 alias yr="yarn remove"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
