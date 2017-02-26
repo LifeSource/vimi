@@ -242,14 +242,14 @@ if &t_Co > 255
 
     if exists("g:rehash256") && g:rehash256 == 1
         hi Normal            ctermfg=252   ctermbg=234                    guifg=#d0d0d0
+        "hi Normal            ctermfg=252   ctermbg=none                    guifg=#d0d0d0
         hi CursorLine                      ctermbg=136    cterm=none      guifg=#af8700
         hi CursorLineNr      ctermfg=118                  cterm=none      guifg=#87ff00
 
         hi Boolean           ctermfg=141                             guifg=#af87ff
         hi Character         ctermfg=222                             guifg=#ffdf87
         hi Number            ctermfg=171
-        "hi String            ctermfg=193
-        hi String            ctermfg=229
+        hi String            ctermfg=193
         hi Conditional       ctermfg=26			    cterm=bold     guifg=#005fd7
         hi Constant          ctermfg=141        cterm=bold
 
@@ -315,28 +315,30 @@ if &t_Co > 255
         " ---------------------------------------
         " Javascript specific configuration
         " ---------------------------------------
-        hi jsOperator                        ctermfg=10      guifg=#00ff00
-        hi javaScriptReserved                ctermfg=166     guifg=#d75f00
+        hi jsOperator                        ctermfg=80
         hi jsDotNotation                     ctermfg=92      guifg=#8700d7
         hi jsIdentifier                      ctermfg=39      guifg=#00afff
         hi jsModules                         ctermfg=92      guifg=#8700d7
         hi jsBuiltins                        ctermfg=92      guifg=#8700d7
         hi jsFuncArgs                        ctermfg=214     guifg=#ffaf00
         "hi jsFuncCall                        ctermfg=31      guifg=#0087d7
-        hi jsFuncCall                        ctermfg=45
-        hi jsFuncName                        ctermfg=154     guifg=#afff00
-        hi jsFunction                        ctermfg=80
+        hi jsFuncCall                        ctermfg=31
+        "hi jsFuncName                        ctermfg=154     guifg=#afff00
+        hi jsFuncName                        ctermfg=113
+        hi jsFunction                        ctermfg=31
         hi jsFunctionKey                     ctermfg=154
         hi jsFuncAssignObjChain              ctermfg=154
         hi jsDecoratorFunction               ctermfg=154
-        hi jsFuncBraces                      ctermfg=214     guifg=#ffaf00
+        "hi jsFuncBraces                      ctermfg=214     guifg=#ffaf00
+        hi jsFuncBraces                      ctermfg=160
         hi jsFuncParens                      ctermfg=160     guifg=#d70000
         hi jsFutureKeys                      ctermfg=213
         hi jsFuncArgCommas                   ctermfg=154
         hi jsArrowFunction                   ctermfg=154
         hi jsSpecial                         ctermfg=113     guifg=#87ff5f
         hi jsRepeat                          ctermfg=39      
-        hi jsKeyword                         ctermfg=113     guifg=#87ff5f
+        "hi jsKeyword                         ctermfg=113     guifg=#87ff5f
+        hi jsKeyword                         ctermfg=2
         hi jsStatement                       ctermfg=113     guifg=#87ff5f
         hi jsStorageClass                    ctermfg=80
         hi jsPrototype                       ctermfg=129     guifg=#af00ff
@@ -344,6 +346,9 @@ if &t_Co > 255
         hi jsSuper                           ctermfg=80      guifg=#5fd7d7
         hi jsReturn                          ctermfg=202
         hi jsThis                            ctermfg=129     guifg=#af00ff
+        hi jsImport                          ctermfg=129     guifg=#af00ff
+        hi jsExport                          ctermfg=129     guifg=#af00ff
+        hi jsFrom                            ctermfg=129     guifg=#af00ff
         hi jsConditional                     ctermfg=39
         hi jsOf                              ctermfg=129     guifg=#af00ff
         hi jsModules                         ctermfg=129     guifg=#af00ff

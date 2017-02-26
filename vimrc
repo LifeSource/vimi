@@ -5,9 +5,9 @@ filetype plugin indent on
 
 let g:molokai_original = 1
 let g:rehash256 = 1
-"colorscheme lifesource
 set background=dark
-colorscheme solarized 
+colorscheme lifesource
+"colorscheme solarized 
 
 " --------------------------------------------------------------
 " General settings
