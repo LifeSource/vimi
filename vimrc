@@ -52,6 +52,9 @@ map <c-l> <ESC>:set list!<CR>       " toggle invisible characters
 map <c-h> <ESC>:%s/;//gc<CR>
 map <c-8> <ESC>:%s/\'/\"/gc<CR>
 
+" Rename under cursor
+nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
+
 " Vim buffer management
 nnoremap ,q :bd<CR>
 nnoremap ,w <C-w>v
