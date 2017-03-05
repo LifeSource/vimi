@@ -393,7 +393,7 @@ if &t_Co > 255
         " ----------------------------------------
         " HTML specific configuration
         " ----------------------------------------
-        hi htmlTagName	      ctermfg=221
+        hi htmlTagName	      ctermfg=45
         hi htmlTag	          ctermfg=154
         hi htmlEndTag	        ctermfg=154    
         hi htmlArg            ctermfg=197
