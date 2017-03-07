@@ -55,3 +55,6 @@ linters:
   SpaceAfterPropertyColon:
     enabled: true
     style: one_space 
+      
+  StringQuotes:
+    style: double_quotes
