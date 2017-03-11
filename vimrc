@@ -48,9 +48,10 @@ nmap <C-d> :put +<CR>
 map zz :w<CR>
 map zx :wq!<CR>
 map qq :qa!<CR>
+
 map <c-l> <ESC>:set list!<CR>       " toggle invisible characters         
-map <c-h> <ESC>:%s/;//gc<CR>
-map <c-8> <ESC>:%s/\'/\"/gc<CR>
+map <c-h> <ESC>:%s/;//gc<CR>        " remove semicolons globally
+map <c-8> <ESC>:%s/'/"/gc<CR>     " change single quotes to double globally
 
 " Rename under cursor
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
