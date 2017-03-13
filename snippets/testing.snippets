@@ -4,13 +4,10 @@
 
 snippet suite5
 	describe("${1}", function() {
-
 		beforeEach(function() {
-
 		})
 
 		afterEach(function() {
-
 		})
 
 		${0}
@@ -95,9 +92,9 @@ snippet elen
 # --------------------------------------
 snippet sex
 	${1}.should.exist
-snippet !sex 
+snippet !sex
 	${1}.should.not.exist
-snippet sbe 
+snippet sbe
 	${1}.should.be.a(${2})${0}
 snippet seq
 	${1}.should.equal(${2})${0}
@@ -105,3 +102,38 @@ snippet slen
 	${1}.should.have.length(${2})${0}
 snippet slaba
 	${1}.should.have.length.above(${2})${0}
+
+# --------------------------------------
+# Jest specific snippets
+# --------------------------------------
+snippet jtest
+  test("${1}", () => {
+    ${0}
+  })
+snippet jeq
+  expect(${1}).toEqual({$2})${0}
+snippet jnot
+  expect(${1}).not.${2}
+snippet jgt
+  expect(${1}).toBeGreaterThan(${2})${0}
+snippet jgte
+  expect(${1}).toBeGreaterThanOrEqual(${2})${0}
+snippet jlt
+  expect(${1}).toBeLessThan(${2})${0}
+snippet jlte
+  expect(${1}).toBeLessThanOrEqual(${2})${0}
+snippet jiof
+  expect(${1}).toBeInstanceOf(${2})
+snippet jnull
+  expect(${1}).toBeNull()
+snippet jdef
+  expect(${1}).toBeDefined()
+snippet jund
+  expect(${1}).toBeUndefined()
+snippet jlen
+  expect(${1}).toHaveLength(${2})${0}
+snippet jthrow
+  expect(${1}).toThrow()
+snippet jcon
+  expect(${1}).toContain(${2})${0}
+
