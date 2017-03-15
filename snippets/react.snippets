@@ -1,31 +1,23 @@
+# ------------------------------------------------
 # React Snippets
+# ------------------------------------------------
 
 # Imports
 snippet impr
 	import React from "react"
 snippet impl
-	import {Link} from "react-router"
+	import {Link} from "react-router-dom"
 snippet impt
-	import {PropTypes} from "react"
-
+	import React, {PropTypes} from "react"
 # Rendering
 snippet rrender
-	React.render(<${1} />, ${2})${0}
+	ReactDOM.render(<${1} />, ${2})${0}
 snippet rr
 	render(${1}, document.getElementById("${2}"))${0}
+# ------------------------------------------------
 # Component creation
-snippet rcomp5
-	var React = require("react")
+# ------------------------------------------------
 
-	var ${1:} = React.createClass({
-		render: function () {
-			return (
-				${0}
-			)
-		}
-	})
-
-	module.exports = $1
 # Stateful component
 snippet rcomp
 	import React, {PropTypes} from "react"
@@ -46,7 +38,8 @@ snippet rcomp
 		
 	}
 
-	export default $1
+	export { $1 }
+
 # Stateless Component
 snippet scomp
 	import React, { PropTypes } from "react"
@@ -59,7 +52,8 @@ snippet scomp
 		
 	}
 
-	export default $1
+	export { $1 }
+
 # Redux container component
 snippet xcomp
 	import React, { PropTypes } from "react"
@@ -90,13 +84,10 @@ snippet xcomp
 
 snippet pt
 	React.PropTypes.${1}
-
 snippet rpt
 	static propTypes = { ${1} }${0}
-
 snippet dpt
 	static defaultProps = { ${1} }${0}
-
 # return
 snippet rt
 	return (
@@ -137,9 +128,3 @@ snippet rdxcomp
 	}
 
 	export default connect(mapStateToProps, mapDispatchToProps)($1)
-
-# JEST test
-snippet rtest
-	test("${1}", () => {
-		${0}
-	})
