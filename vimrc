@@ -235,7 +235,7 @@ let g:ctrlp_working_path_mode = "ra"
 let g:ctrlp_show_hidden = 1
 set runtimepath^=~/vim/bundle/ctrlp.vim
 " ignore the directories and files with the following extensions
-set wildignore+=*/node_modules/*,/*bower_components/*,/*jspm_packages/*,/*platforms/*,*/vendor/*,*/dist/*,*.so,*.swp,*.zip,*~
+set wildignore+=*/node_modules/*,/*bower_components/*,/*jspm_packages/*,/*platforms/*,*/vendor/*,*/dist/*,*.so,*.swp,*.zip,*.fuse*,*~
 
 
 " ------------------------------------------------------------------------
