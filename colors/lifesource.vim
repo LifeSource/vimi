@@ -417,7 +417,8 @@ if &t_Co > 255
         hi xmlTag	         ctermfg=202     guifg=#ff875f
         hi xmlTagName	     ctermfg=39      guifg=#0087ff
         hi xmlEndTag	      ctermfg=154    guifg=#aff000
-        hi xmlAttrib		    ctermfg=202
+        "hi xmlAttrib		    ctermfg=202
+        hi xmlAttrib		    ctermfg=80
 
         " ----------------------------------------
         " Cascading stylesheet customisation

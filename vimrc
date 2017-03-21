@@ -113,7 +113,13 @@ noremap <C-f> :Autoformat<CR>
 let g:autoformat_autoindent = 0
 let g:autoformat_retab = 0
 let g:autoformat_remove_trailing_spaces = 0
-"
+" ------------------------------------------------------------------------
+" Pretteier
+" ------------------------------------------------------------------------
+autocmd FileType javascript set formatprg=prettier\ --stdin
+autocmd BufWritePre *.js :normal gggqG
+"autocmd BufWritePre *.jsx :normal gggqG
+
 " --------------------------------------------------------------
 " Vim-Surround mapping
 " --------------------------------------------------------------
