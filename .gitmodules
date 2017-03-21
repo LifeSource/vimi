@@ -88,3 +88,6 @@
 [submodule "bundle/solarized"]
 	path = bundle/solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/styled-componenets"]
+	path = bundle/styled-componenets
+	url = git@github.com:fleischie/vim-styled-components.git
