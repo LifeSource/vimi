@@ -286,7 +286,7 @@ if &t_Co > 255
         " ---------------------------------------
         " Typescript specific configuration
         " ---------------------------------------
-        hi typescriptBraces                  ctermfg=10
+        hi typescriptBraces                  ctermfg=154
         hi typescriptParens                  ctermfg=160
         hi typescriptIdentifier              ctermfg=39
         hi typescriptConditional             ctermfg=202
@@ -300,22 +300,24 @@ if &t_Co > 255
         hi typescriptFuncArg                 ctermfg=80
         hi typescriptParameters              ctermfg=214
         hi typescriptLabel                   ctermfg=80
-        hi typescriptDotNotation             ctermfg=10
+        hi typescriptDotNotation             ctermfg=80
         hi typescriptLogicSymbols            ctermfg=10
         hi typescriptReserved                ctermfg=214
         hi typescriptVars                    ctermfg=80
         hi typescriptSource                  ctermfg=80
-        hi typescriptOperator                ctermfg=10
+        hi typescriptOperator                ctermfg=154
         hi typescriptCharacter               ctermfg=10
         hi typescriptOpSymbols               ctermfg=226
         hi typescriptEndColons               ctermfg=202
+        hi typescriptGlobal                  ctermfg=92
         hi typescriptGlobalObjects           ctermfg=221
         hi typescriptInterpolationDelimiter  ctermfg=92
 
         " ---------------------------------------
         " Javascript specific configuration
         " ---------------------------------------
-        hi jsOperator                        ctermfg=80
+        "hi jsOperator                        ctermfg=80
+        hi jsOperator                        ctermfg=29
         hi jsDotNotation                     ctermfg=92      guifg=#8700d7
         hi jsIdentifier                      ctermfg=39      guifg=#00afff
         hi jsModules                         ctermfg=92      guifg=#8700d7
@@ -325,7 +327,7 @@ if &t_Co > 255
         hi jsFuncCall                        ctermfg=31
         "hi jsFuncName                        ctermfg=154     guifg=#afff00
         hi jsFuncName                        ctermfg=113
-        hi jsFunction                        ctermfg=31
+        hi jsFunction                        ctermfg=39
         hi jsFunctionKey                     ctermfg=154
         hi jsFuncAssignObjChain              ctermfg=154
         hi jsDecoratorFunction               ctermfg=154

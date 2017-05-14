@@ -116,8 +116,8 @@ let g:autoformat_remove_trailing_spaces = 0
 " ------------------------------------------------------------------------
 " Pretteier
 " ------------------------------------------------------------------------
-autocmd FileType javascript set formatprg=prettier\ --stdin
-autocmd BufWritePre *.js :normal gggqG
+"autocmd FileType javascript set formatprg=prettier\ --stdin
+"autocmd BufWritePre *.js :normal gggqG
 "autocmd BufWritePre *.jsx :normal gggqG
 
 " --------------------------------------------------------------
@@ -256,7 +256,7 @@ let g:autoformat_remove_trailing_spaces = 0
 " ------------------------------------------------------------------------
 " automatically open and close the popup menu / preview window
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
-let g:nodejs_complete_config = { 'max_node_compl_len': 5 }
+"let g:nodejs_complete_config = { 'max_node_compl_len': 5 }
 
 "let g:ycm_min_num_of_chars_for_completion=5
 let g:ycm_auto_trigger = 1
@@ -268,3 +268,4 @@ let g:ycm_key_list_previous_completion=[]
 " ------------------------------------------------------------------------
 imap <C-r> :TernRefs<CR>
 nmap <C-r> :TernRefs<CR>
+
