@@ -317,7 +317,7 @@ if &t_Co > 255
         " Javascript specific configuration
         " ---------------------------------------
         "hi jsOperator                        ctermfg=80
-        hi jsOperator                        ctermfg=29
+        hi jsOperator                        ctermfg=154
         hi jsDotNotation                     ctermfg=92      guifg=#8700d7
         hi jsIdentifier                      ctermfg=39      guifg=#00afff
         hi jsModules                         ctermfg=92      guifg=#8700d7
