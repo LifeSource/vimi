@@ -91,3 +91,6 @@
 [submodule "bundle/styled-componenets"]
 	path = bundle/styled-componenets
 	url = git@github.com:fleischie/vim-styled-components.git
+[submodule "bundle/styled-components"]
+	path = bundle/styled-components
+	url = https://github.com/fleischie/vim-styled-components/

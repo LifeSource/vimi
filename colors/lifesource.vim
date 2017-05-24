@@ -377,6 +377,8 @@ if &t_Co > 255
         hi javascriptFunctionFold            ctermfg=114     guifg=#87d787
         hi javaScriptSpecialCharacter        ctermfg=27      guifg=#005fff
         hi jsTemplateVar                     ctermfg=129     guifg=#af00ff 
+        hi jsTemplateString                  ctermfg=214
+        hi jsTemplateTaggedTemplate          ctermfg=214
         hi jsFuncAssignObjChain              ctermfg=129     guifg=#af00ff 
         hi jsFuncArgRest                     ctermfg=195     guifg=#d7ffff
         hi jsAssignmentExpr                  ctermfg=213
