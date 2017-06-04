@@ -241,8 +241,7 @@ let g:ctrlp_working_path_mode = "ra"
 let g:ctrlp_show_hidden = 1
 set runtimepath^=~/vim/bundle/ctrlp.vim
 " ignore the directories and files with the following extensions
-set wildignore+=*/node_modules/*,/*bower_components/*,/*jspm_packages/*,/*platforms/*,*/vendor/*,*/dist/*,*.so,*.swp,*.zip,*.fuse*,*~
-
+set wildignore+=*/node_modules/*,/*bower_components/*,/*jspm_packages/*,/*platforms/*,*/vendor/*,*/dist/*,*.so,*.swp,*.zip,*.fuse*,*.next*,*~
 
 " ------------------------------------------------------------------------
 "  Autoformat settings
@@ -266,6 +265,6 @@ let g:ycm_key_list_previous_completion=[]
 " ------------------------------------------------------------------------
 " TernJS mappings 
 " ------------------------------------------------------------------------
-imap <C-r> :TernRefs<CR>
-nmap <C-r> :TernRefs<CR>
+imap <leader>r :TernRefs<CR>
+nmap <leader>r :TernRefs<CR>
 
