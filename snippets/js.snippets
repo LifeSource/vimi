@@ -17,9 +17,9 @@ snippet sto
 # Object, Constants and Variable  Creation
 # ---------------------------------------------
 snippet vv
-	let ${1} = ${2}
+	let ${1} = ${2}${0}
 snippet vr
-	let ${1} = [${2}]
+	let ${1} = [${2}]${0}
 snippet vb
 	let ${1} = {
 		${0}
@@ -149,3 +149,8 @@ snippet xd
 snippet obja
 	Object.assign({}, ${1}, ${0})
 
+# Spread and rest
+snippet spd
+	...${0}
+snippet arspd
+	[...${1}]${0}

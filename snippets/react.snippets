@@ -22,8 +22,6 @@ snippet imps
 
 # Stateful component
 snippet rcomp
-	import React, {PropTypes} from "react"
-
 	class ${1:} extends React.Component {
 		constructor(props) {
 			super(props)
@@ -36,21 +34,11 @@ snippet rcomp
 		}
 	}
 
-	$1.propTypes = {
-		
-	}
-
 	export { $1 }
 
 # Stateless Component
 snippet scomp
-	import React, { PropTypes } from "react"
-
 	const ${1:} = (props) => ${0}
-
-	$1.propTypes = {
-
-	}
 
 	export { $1 }
 
