@@ -55,7 +55,7 @@ map <c-8> <ESC>:%s/'/"/gc<CR>     " change single quotes to double globally
 
 " Rename under cursor
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
-
+":unmap <C-r>
 " Vim buffer management
 nnoremap ,q :bd<CR>
 nnoremap ,w <C-w>v
@@ -267,4 +267,5 @@ let g:ycm_key_list_previous_completion=[]
 " ------------------------------------------------------------------------
 imap <leader>r :TernRefs<CR>
 nmap <leader>r :TernRefs<CR>
-
+" Force TS to be JS
+au BufReadPost *.ts set syntax=javascript

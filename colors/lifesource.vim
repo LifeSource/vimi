@@ -303,6 +303,7 @@ if &t_Co > 255
         hi typescriptDotNotation             ctermfg=80
         hi typescriptLogicSymbols            ctermfg=10
         hi typescriptReserved                ctermfg=214
+        "hi typescriptReserved                ctermfg=129
         hi typescriptVars                    ctermfg=80
         hi typescriptSource                  ctermfg=80
         hi typescriptOperator                ctermfg=154
@@ -326,7 +327,8 @@ if &t_Co > 255
         "hi jsFuncCall                        ctermfg=31      guifg=#0087d7
         hi jsFuncCall                        ctermfg=31
         "hi jsFuncName                        ctermfg=154     guifg=#afff00
-        hi jsFuncName                        ctermfg=113
+        "hi jsFuncName                        ctermfg=113
+        hi jsFuncName                        ctermfg=154
         hi jsFunction                        ctermfg=39
         hi jsFunctionKey                     ctermfg=154
         hi jsFuncAssignObjChain              ctermfg=154
@@ -334,7 +336,7 @@ if &t_Co > 255
         "hi jsFuncBraces                      ctermfg=214     guifg=#ffaf00
         hi jsFuncBraces                      ctermfg=160
         hi jsFuncParens                      ctermfg=160     guifg=#d70000
-        hi jsFutureKeys                      ctermfg=213
+        hi jsFutureKeys                      ctermfg=129
         hi jsFuncArgCommas                   ctermfg=154
         hi jsArrowFunction                   ctermfg=154
         hi jsSpecial                         ctermfg=113     guifg=#87ff5f
@@ -355,7 +357,8 @@ if &t_Co > 255
         hi jsOf                              ctermfg=129     guifg=#af00ff
         hi jsModules                         ctermfg=129     guifg=#af00ff
         hi jsModuleWords                     ctermfg=129     guifg=#af00ff
-        hi jsClassKeyword                    ctermfg=214
+        "hi jsClassKeyword                    ctermfg=214
+        hi jsClassKeyword                    ctermfg=80
         hi jsClassBraces                     ctermfg=160
         hi jsObjectBraces                    ctermfg=160
         hi jsGlobalObjects                   ctermfg=221     guifg=#ffd75f
@@ -377,8 +380,9 @@ if &t_Co > 255
         hi javascriptFunctionFold            ctermfg=114     guifg=#87d787
         hi javaScriptSpecialCharacter        ctermfg=27      guifg=#005fff
         hi jsTemplateVar                     ctermfg=129     guifg=#af00ff 
-        hi jsTemplateString                  ctermfg=214
+        hi jsTemplateString                  ctermfg=255
         hi jsTemplateTaggedTemplate          ctermfg=214
+        hi jsTemplateExpression              ctermfg=154
         hi jsFuncAssignObjChain              ctermfg=129     guifg=#af00ff 
         hi jsFuncArgRest                     ctermfg=195     guifg=#d7ffff
         hi jsAssignmentExpr                  ctermfg=213
