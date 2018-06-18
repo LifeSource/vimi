@@ -94,3 +94,6 @@
 [submodule "bundle/styled-components"]
 	path = bundle/styled-components
 	url = https://github.com/fleischie/vim-styled-components/
+[submodule "vim-prettier"]
+	path = vim-prettier
+	url = https://github.com/prettier/vim-prettier
