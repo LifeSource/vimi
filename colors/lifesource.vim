@@ -350,14 +350,13 @@ if &t_Co > 255
         hi jsSuper                           ctermfg=80      guifg=#5fd7d7
         hi jsReturn                          ctermfg=202
         hi jsThis                            ctermfg=129     guifg=#af00ff
-        hi jsImport                          ctermfg=129     guifg=#af00ff
+        hi jsImport                          ctermfg=129     
         hi jsExport                          ctermfg=129     guifg=#af00ff
         hi jsFrom                            ctermfg=129     guifg=#af00ff
         hi jsConditional                     ctermfg=39
         hi jsOf                              ctermfg=129     guifg=#af00ff
         hi jsModules                         ctermfg=129     guifg=#af00ff
         hi jsModuleWords                     ctermfg=129     guifg=#af00ff
-        "hi jsClassKeyword                    ctermfg=214
         hi jsClassKeyword                    ctermfg=80
         hi jsClassBraces                     ctermfg=160
         hi jsObjectBraces                    ctermfg=160
@@ -414,12 +413,6 @@ if &t_Co > 255
         hi htmlTagN           ctermfg=209     guifg=#ff875f
 
         " ----------------------------------------
-        " Pug/Jade specific configuration
-        " ----------------------------------------
-        hi pugTag             ctermfg=10  
-        hi pugClass           ctermfg=129 
-        
-        " ----------------------------------------
         " XML specific configuration
         " ----------------------------------------
         hi xmlTag	         ctermfg=202     guifg=#ff875f
@@ -467,7 +460,7 @@ if &t_Co > 255
         hi cssPseudoClass				   ctermfg=45 	   guifg=#00d7ff
         hi cssPseudoClassId				 ctermfg=45 	   guifg=#00d7ff
         hi cssMultiColumnProp			 ctermfg=45 	   guifg=#00d7ff
-        hi cssFlexibleBoxAttr			 ctermfg=92 	   guifg=#8700d7
+        hi cssFlexibleBoxAttr			 ctermfg=118 	   guifg=#8700d7
         hi cssFlexibleBoxProp			 ctermfg=118
 
         " ----------------------------------------
