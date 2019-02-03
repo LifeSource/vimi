@@ -326,8 +326,6 @@ if &t_Co > 255
         hi jsFuncArgs                        ctermfg=214     guifg=#ffaf00
         "hi jsFuncCall                        ctermfg=31      guifg=#0087d7
         hi jsFuncCall                        ctermfg=31
-        "hi jsFuncName                        ctermfg=154     guifg=#afff00
-        "hi jsFuncName                        ctermfg=113
         hi jsFuncName                        ctermfg=154
         hi jsFunction                        ctermfg=39
         hi jsFunctionKey                     ctermfg=154
@@ -341,10 +339,10 @@ if &t_Co > 255
         hi jsArrowFunction                   ctermfg=154
         hi jsSpecial                         ctermfg=113     guifg=#87ff5f
         hi jsRepeat                          ctermfg=39      
-        "hi jsKeyword                         ctermfg=113     guifg=#87ff5f
-        hi jsKeyword                         ctermfg=2
+        hi jsKeyword                         ctermfg=113     guifg=#87ff5f
+        "hi jsKeyword                         ctermfg=2
         hi jsStatement                       ctermfg=113     guifg=#87ff5f
-        hi jsStorageClass                    ctermfg=80
+        hi jsStorageClass                    ctermfg=39      guifg=#00afff
         hi jsPrototype                       ctermfg=129     guifg=#af00ff
         hi jsLabel                           ctermfg=80      guifg=#5fd7d7       
         hi jsSuper                           ctermfg=80      guifg=#5fd7d7
@@ -365,7 +363,8 @@ if &t_Co > 255
         hi jsLineComment                     ctermfg=114     guifg=#87d787
         hi jsComment                         ctermfg=114     guifg=#87d787
         hi jsObjectKey                       ctermfg=80
-        hi jsBraces                          ctermfg=160
+        hi jsObjectFuncName                  ctermfg=39
+        hi jsBraces                          ctermfg=10
         hi jsBrackets                        ctermfg=10      guifg=#00ff00
         hi jsParens                          ctermfg=221
         hi javaScriptBraces                  ctermfg=10
@@ -374,18 +373,22 @@ if &t_Co > 255
         hi javaScriptStringS                 ctermfg=212     guifg=#ff87d7
         hi javaScriptFuncExp                 ctermfg=114     guifg=#87d787
         hi javaScriptSpecial                 ctermfg=254     guifg=#e4e4e4
-        hi javaScriptOperator                ctermfg=10      guifg=#00ff00
-        hi javaScriptIdentifier              ctermfg=255
+        hi javaScriptOperator                ctermfg=10
+        "hi javaScriptIdentifier              ctermfg=255
+        hi javaScriptIdentifier              ctermfg=80
         hi javascriptFunctionFold            ctermfg=114     guifg=#87d787
         hi javaScriptSpecialCharacter        ctermfg=27      guifg=#005fff
         hi jsTemplateVar                     ctermfg=129     guifg=#af00ff 
-        hi jsTemplateString                  ctermfg=255
+        hi jsTemplateString                  ctermfg=230
         hi jsTemplateTaggedTemplate          ctermfg=214
         hi jsTemplateExpression              ctermfg=154
         hi jsFuncAssignObjChain              ctermfg=129     guifg=#af00ff 
         hi jsFuncArgRest                     ctermfg=195     guifg=#d7ffff
         hi jsAssignmentExpr                  ctermfg=213
         hi jsAssignExpIdent                  ctermfg=213
+        hi jsDestructuringValue              ctermfg=80
+        hi jsDestructuringProperty           ctermfg=80
+        hi jsDestructuringPropertyValue      ctermfg=80
 
         " ----------------------------------------
         " Json specific configuration
