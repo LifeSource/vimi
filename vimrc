@@ -100,9 +100,11 @@ let g:vcoolor_lowercase = 1
 " Emmet settings
 " --------------------------------------------------------------
 let g:user_emmet_install_global = 1
-"autocmd FileType html,pug,jade,css,scss,js,jsx,ts,tsx  EmmetInstall
+let g:user_emmet_mode='a' "Enable on all mode (insert, normal, visual)
 vmap hh <C-y>,
 imap hh <C-y>,
+"autocmd FileType html,pug,jade,css,scss,js,jsx,ts,tsx  EmmetInstall
+autocmd FileType html,css EmmetInstall
 
 " --------------------------------------------------------------
 "  Autoformat settings
@@ -113,8 +115,9 @@ noremap <C-f> :Autoformat<CR>
 let g:autoformat_autoindent = 0
 let g:autoformat_retab = 0
 let g:autoformat_remove_trailing_spaces = 0
+
 " ------------------------------------------------------------------------
-" Pretteier
+" Prettier
 " ------------------------------------------------------------------------
 "autocmd FileType javascript set formatprg=prettier\ --stdin
 "autocmd BufWritePre *.js :normal gggqG

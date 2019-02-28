@@ -73,9 +73,6 @@
 [submodule "bundle/css-color"]
 	path = bundle/css-color
 	url = git@github.com:ap/vim-css-color.git
-[submodule "bundle/jsx"]
-	path = bundle/jsx
-	url = git@github.com:mxw/vim-jsx.git
 [submodule "bundle/devicons"]
 	path = bundle/devicons
 	url = git@github.com:ryanoasis/vim-devicons.git
