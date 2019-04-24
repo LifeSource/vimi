@@ -350,7 +350,7 @@ if &t_Co > 255
         hi jsPrototype                       ctermfg=129     guifg=#af00ff
         hi jsLabel                           ctermfg=80      guifg=#5fd7d7       
         hi jsSuper                           ctermfg=80      guifg=#5fd7d7
-        hi jsReturn                          ctermfg=39
+        hi jsReturn                          ctermfg=214
         hi jsThis                            ctermfg=129     guifg=#af00ff
         hi jsImport                          ctermfg=129
         hi jsExport                          ctermfg=129
@@ -398,7 +398,7 @@ if &t_Co > 255
         hi jsDestructuringBlock              ctermfg=214
         hi jsDestructuringValue              ctermfg=80
         hi jsDestructuringProperty           ctermfg=80
-        hi jsDestructuringPropertyValue      ctermfg=214
+        hi jsDestructuringPropertyValue      ctermfg=80
 
         " ----------------------------------------
         " Json specific configuration
@@ -440,10 +440,10 @@ if &t_Co > 255
         " Cascading stylesheet customisation
         " ----------------------------------------
         hi cssComment              ctermfg=114     guifg=#87d787
-        hi cssTagName              ctermfg=11
-        hi cssClassName            ctermfg=202     guifg=#ff5f00
-        hi cssBraces               ctermfg=202     guifg=#ff5f00
-        hi cssClassNameDot         ctermfg=129     guifg=#af00ff
+        hi cssTagName              ctermfg=214
+        hi cssClassName            ctermfg=80
+        hi cssBraces               ctermfg=160
+        hi cssClassNameDot         ctermfg=129   
         hi cssIdentifier           ctermfg=214
         hi cssFontProp             ctermfg=118
         hi cssBackgroundProp	     ctermfg=118
@@ -468,12 +468,12 @@ if &t_Co > 255
         "hi cssNoise						     ctermfg=124		 guifg=#af0000
         hi cssGeneratedContentProp ctermfg=118     guifg=#87ff00 
         hi cssFunction             ctermfg=118
-        hi cssFunctionName         ctermfg=212     guifg=#ff87d7
+        hi cssFunctionName         ctermfg=214
         hi cssInclude              ctermfg=10
         hi cssIncludeKeyword       ctermfg=10      
         hi cssUnitDecorators			 ctermfg=15
-        hi cssPseudoClass				   ctermfg=45 	   guifg=#00d7ff
-        hi cssPseudoClassId				 ctermfg=45 	   guifg=#00d7ff
+        hi cssPseudoClass				   ctermfg=214
+        hi cssPseudoClassId				 ctermfg=214
         hi cssMultiColumnProp			 ctermfg=45 	   guifg=#00d7ff
         hi cssFlexibleBoxAttr			 ctermfg=118 	   guifg=#8700d7
         hi cssFlexibleBoxProp			 ctermfg=118

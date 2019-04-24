@@ -94,3 +94,6 @@
 [submodule "vim-prettier"]
 	path = vim-prettier
 	url = https://github.com/prettier/vim-prettier
+[submodule "bundle/vim-import-js"]
+	path = bundle/vim-import-js
+	url = git@github.com:Galooshi/vim-import-js.git
