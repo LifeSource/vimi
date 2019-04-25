@@ -323,7 +323,8 @@ if &t_Co > 255
         "hi jsIdentifier                      ctermfg=39      guifg=#00afff
         hi jsIdentifier                      ctermfg=80
         hi jsModules                         ctermfg=92      guifg=#8700d7
-        hi jsBuiltins                        ctermfg=92      guifg=#8700d7
+        "hi jsBuiltins                        ctermfg=92      guifg=#8700d7
+        hi jsBuiltins                        ctermfg=113
         hi jsFuncArgs                        ctermfg=221
         "hi jsFuncCall                        ctermfg=31      guifg=#0087d7
         hi jsFuncCall                        ctermfg=31
@@ -342,7 +343,6 @@ if &t_Co > 255
         hi jsArrowFunction                   ctermfg=39
         hi jsSpecial                         ctermfg=113     guifg=#87ff5f
         hi jsRepeat                          ctermfg=39      
-        "hi jsKeyword                         ctermfg=113     guifg=#87ff5f
         hi jsKeyword                         ctermfg=214
         "hi jsKeyword                         ctermfg=2
         hi jsStatement                       ctermfg=113     guifg=#87ff5f
@@ -350,7 +350,8 @@ if &t_Co > 255
         hi jsPrototype                       ctermfg=129     guifg=#af00ff
         hi jsLabel                           ctermfg=80      guifg=#5fd7d7       
         hi jsSuper                           ctermfg=80      guifg=#5fd7d7
-        hi jsReturn                          ctermfg=214
+        "hi jsReturn                          ctermfg=214
+        hi jsReturn                          ctermfg=113
         hi jsThis                            ctermfg=129     guifg=#af00ff
         hi jsImport                          ctermfg=129
         hi jsExport                          ctermfg=129
@@ -368,7 +369,6 @@ if &t_Co > 255
         hi jsLineComment                     ctermfg=114     guifg=#87d787
         hi jsComment                         ctermfg=114     guifg=#87d787
         hi jsObjectKey                       ctermfg=80
-        "hi jsObjectKey                       ctermfg=80
         hi jsObjectFuncName                  ctermfg=113
         "hi jsBraces                          ctermfg=27
         hi jsBraces                          ctermfg=220
@@ -399,6 +399,7 @@ if &t_Co > 255
         hi jsDestructuringValue              ctermfg=80
         hi jsDestructuringProperty           ctermfg=80
         hi jsDestructuringPropertyValue      ctermfg=80
+        hi jsGlobalNodeObjects               ctermfg=113
 
         " ----------------------------------------
         " Json specific configuration
