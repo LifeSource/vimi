@@ -395,7 +395,8 @@ if &t_Co > 255
         hi jsAssignmentExpr                  ctermfg=213
         hi jsAssignExpIdent                  ctermfg=213
         hi jsDestructuringBraces             ctermfg=227
-        hi jsDestructuringBlock              ctermfg=214
+        "hi jsDestructuringBlock              ctermfg=214
+        hi jsDestructuringBlock              ctermfg=80
         hi jsDestructuringValue              ctermfg=80
         hi jsDestructuringProperty           ctermfg=80
         hi jsDestructuringPropertyValue      ctermfg=80

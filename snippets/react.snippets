@@ -44,6 +44,17 @@ snippet scomp
 
 	export { $1 }
 
+# Functional Component
+snippet fcomp
+	const ${1:} = (props) => {
+		return (
+			${0}
+		);
+	}
+
+	export { $1 }
+	
+
 # Redux container component
 snippet xcomp
 	import React, { PropTypes } from "react"
