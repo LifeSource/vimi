@@ -345,13 +345,12 @@ if &t_Co > 255
         hi jsRepeat                          ctermfg=39      
         hi jsKeyword                         ctermfg=214
         "hi jsKeyword                         ctermfg=2
-        hi jsStatement                       ctermfg=113     guifg=#87ff5f
+        hi jsStatement                       ctermfg=160     guifg=#d70000
         hi jsStorageClass                    ctermfg=39      guifg=#00afff
         hi jsPrototype                       ctermfg=129     guifg=#af00ff
         hi jsLabel                           ctermfg=80      guifg=#5fd7d7       
         hi jsSuper                           ctermfg=80      guifg=#5fd7d7
-        "hi jsReturn                          ctermfg=214
-        hi jsReturn                          ctermfg=113
+        hi jsReturn                          ctermfg=39
         hi jsThis                            ctermfg=129     guifg=#af00ff
         hi jsImport                          ctermfg=129
         hi jsExport                          ctermfg=129
@@ -401,6 +400,9 @@ if &t_Co > 255
         hi jsDestructuringProperty           ctermfg=80
         hi jsDestructuringPropertyValue      ctermfg=80
         hi jsGlobalNodeObjects               ctermfg=113
+        hi jsAsyncKeyword                    ctermfg=80
+        hi jsBooleanTrue                     ctermfg=154
+        hi jsBooleanFalse                    ctermfg=154
 
         " ----------------------------------------
         " Json specific configuration
