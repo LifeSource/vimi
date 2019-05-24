@@ -1,0 +1,12 @@
+{
+  "parser": "esprima",
+  "rules": {
+    "semi": ["error", "never"],
+    "no-undef": "error",
+    "no-undefined": "error",
+    "no-unused-vars": "error",
+    "no-use-before-define": "error",
+    "brace-style": ["error", "1tbs"],
+    "indent": ["error", 2]
+  }
+}

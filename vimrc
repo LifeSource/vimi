@@ -171,7 +171,6 @@ let g:syntastic_check_on_wq = 0
 "let g:syntastic_typescript_tsc_fname=''
 let g:syntastic_javascript_eslint_exec = "/usr/local/bin/eslint"
 let g:syntastic_javascript_checkers = ["eslint"]
-let g:Tsuquyomi_disable_quickfix = 1
 let g:syntastic_typescript_checkers = ["Tsuquyomi"]
 let g:syntastic_scss_checkers = ["scss_lint"]
 
@@ -276,3 +275,4 @@ nmap <leader>r :TernRefs<CR>
 " Force TS to be JS
 au BufReadPost *.ts, set syntax=javascript
 au BufReadPost *.tsx, set syntax=javascript
+au BufReadPost *.prisma, set syntax=graphql

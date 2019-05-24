@@ -97,3 +97,12 @@
 [submodule "bundle/vim-import-js"]
 	path = bundle/vim-import-js
 	url = git@github.com:Galooshi/vim-import-js.git
+[submodule "bundle/--force"]
+	path = bundle/--force
+	url = git@github.com:mxw/vim-jsx.git
+[submodule "bundle/vim-jsx"]
+	path = bundle/vim-jsx
+	url = git@github.com:mxw/vim-jsx.git
+[submodule "bundle/vim-graphql"]
+	path = bundle/vim-graphql
+	url = https://github.com/jparise/vim-graphql.git

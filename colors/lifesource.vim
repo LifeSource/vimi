@@ -340,7 +340,7 @@ if &t_Co > 255
         hi jsFuncParens                      ctermfg=160     guifg=#d70000
         hi jsFutureKeys                      ctermfg=129
         hi jsFuncArgCommas                   ctermfg=154
-        hi jsArrowFunction                   ctermfg=39
+        hi jsArrowFunction                   ctermfg=221
         hi jsSpecial                         ctermfg=113     guifg=#87ff5f
         hi jsRepeat                          ctermfg=39      
         hi jsKeyword                         ctermfg=214
@@ -417,7 +417,7 @@ if &t_Co > 255
         " ----------------------------------------
         " HTML specific configuration
         " ----------------------------------------
-        hi htmlTagName	      ctermfg=45
+        "hi htmlTagName	      ctermfg=154
         "hi htmlTag	          ctermfg=154
         hi htmlTag	          ctermfg=154
         hi htmlEndTag	        ctermfg=154    
@@ -434,7 +434,8 @@ if &t_Co > 255
         " XML specific configuration
         " ----------------------------------------
         hi xmlTag	         ctermfg=202     guifg=#ff875f
-        hi xmlTagName	     ctermfg=39      guifg=#0087ff
+        "hi xmlTagName	     ctermfg=39      guifg=#0087ff
+        hi xmlTagName	     ctermfg=67        
         "hi xmlEndTag	      ctermfg=154    guifg=#aff000
         hi xmlEndTag	      ctermfg=80
         "hi xmlAttrib		    ctermfg=202
