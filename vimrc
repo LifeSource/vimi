@@ -3,6 +3,9 @@ call pathogen#helptags()
 syntax on
 filetype plugin indent on
 
+set encoding=UTF-8
+set guifont=Hack\ Nerd\ Font:h14
+
 let g:molokai_original = 1
 let g:rehash256 = 1
 set background=dark
@@ -116,13 +119,6 @@ let g:autoformat_autoindent = 0
 let g:autoformat_retab = 0
 let g:autoformat_remove_trailing_spaces = 0
 
-" ------------------------------------------------------------------------
-" Prettier
-" ------------------------------------------------------------------------
-"autocmd FileType javascript set formatprg=prettier\ --stdin
-"autocmd BufWritePre *.js :normal gggqG
-"autocmd BufWritePre *.jsx :normal gggqG
-
 " --------------------------------------------------------------
 " Vim-Surround mapping
 " --------------------------------------------------------------
@@ -148,6 +144,9 @@ let NERDTreeShowHidden = 1
 let g:NERDTREEWinPos="left"
 " close vim if there is only nerdtree left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+autocmd vimenter * NERDTree
+
 " NerdTree key bindings
 map <C-n> :NERDTreeToggle<CR>
 "map <leader>r :NERDTreeFind<cr>
@@ -253,6 +252,7 @@ set wildignore+=*/node_modules/*,/*bower_components/*,/*jspm_packages/*,/*platfo
 let g:autoformat_autoindent = 0
 let g:autoformat_retab = 0
 let g:autoformat_remove_trailing_spaces = 0
+au BufWrite * :Autoformat
 
 " ------------------------------------------------------------------------
 "  You Complete Me
@@ -276,3 +276,10 @@ nmap <leader>r :TernRefs<CR>
 au BufReadPost *.ts, set syntax=javascript
 au BufReadPost *.tsx, set syntax=javascript
 au BufReadPost *.prisma, set syntax=graphql
+
+" ------------------------------------------------------------------------
+" Prettier
+" ------------------------------------------------------------------------
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+

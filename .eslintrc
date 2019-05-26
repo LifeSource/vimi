@@ -1,12 +1,28 @@
 {
-  "parser": "esprima",
+  "extends": ["plugin:react/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest": true,
+    "mocha": true,
+    "mongo": true
+  },
   "rules": {
-    "semi": ["error", "never"],
     "no-undef": "error",
     "no-undefined": "error",
     "no-unused-vars": "error",
     "no-use-before-define": "error",
     "brace-style": ["error", "1tbs"],
-    "indent": ["error", 2]
+    "indent": ["error", 2],
+    "react/jsx-uses-vars": 2
   }
 }

@@ -545,6 +545,15 @@ if &t_Co > 255
         hi markdownCodeBlock            ctermfg=214
         hi markdownCode                 ctermfg=214
         hi markdownCodeDelimiter        ctermfg=129
+
+        " ----------------------------------------
+        " GraphQL and Prisma
+        " ----------------------------------------
+        hi graphqlBraces ctermfg=124
+        hi graphqlName  ctermfg=214
+        hi graphqlStructure  ctermfg=45
+        hi graphqlType ctermfg=118
+        hi graphqlVariable ctermfg=209
     endif
 end
 

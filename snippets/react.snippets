@@ -8,7 +8,7 @@ snippet impr
 snippet impl
 	import {Link} from "react-router-dom"
 snippet impt
-	import React, {PropTypes} from "react"
+	import PropTypes from "prop-types"
 snippet impn
 	import { Stylesheet, View, Text } from "react-native"
 # Rendering
@@ -18,6 +18,8 @@ snippet rr
 	render(${1}, document.getElementById("${2}"))${0}
 snippet imps
 	import styled from "styled-components"
+snippet impgql
+	import gql from 'graphql-tag'
 # ------------------------------------------------
 # Component creation
 # ------------------------------------------------
@@ -135,3 +137,22 @@ snippet stcomp
 	const ${1} = styled.${2}`
 		${0}
   `;
+# PropTypes
+snippet pt
+	${1}.propTypes = {
+		${2}: ${0}
+	}
+
+# GraphQL
+snippet mut
+	const ${1:} = gql`
+		mutation ${1} {
+			${0}
+		}
+	`
+snippet qry 
+	const ${1:} = gql`
+		query ${1} {
+			${0}
+		}
+	`
