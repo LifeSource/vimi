@@ -9,6 +9,8 @@ This is my VIM setup used acrossed all my computers, it uses git submodule to ma
 
 ### Installlation
 
+Download the following theme file `lifesource.zsh-theme` to your local oh-my-zsh theme folder first.
+
 ```
 git clone https://github.com/LifeSource/vimi.git  ~/.vim
 ```
@@ -21,7 +23,7 @@ ln -s ~/.vim/zshrc ~/.zshrc
 ln -s ~/.vim/gitgnore_global ~/.gitignore_global
 ln -s ~/.vim/eslintrc ~/.eslintrc
 ln -s ~/.vim/editorconfig ~/.editorconfig
-ln -s ~/.vim/lifesource.zsh-theme ~/.ohmyzsh/themes/lifesource.zsh-theme
+ln -s ~/.vim/lifesource.zsh-theme ~/.oh-my-zsh/themes/lifesource.zsh-theme
 ```
 
 ### Javascript snippets links
